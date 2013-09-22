@@ -43,7 +43,7 @@ def convert(newExtension=".html", files=[], recursive=True, path=""):
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <div class="col-12 col-lg-8 col-lg-offset-2">
       ''' % ".".join(newName.split(".")[:len(newName.split("."))-1]))
     o.write(t2h(f.read()))
     o.write('''
@@ -53,7 +53,7 @@ def convert(newExtension=".html", files=[], recursive=True, path=""):
   <hr/>
   <div class="footer">
     <div class="fluid">
-      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <div class="col-12 col-lg-8 col-lg-offset-2">
         Some stuff here.
       </div>
     </div>
