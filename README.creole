@@ -4,6 +4,12 @@ This is the source for the RoyalCommands documentation. Changes made here will a
 
 It is all written in WikiCreole.
 
-**DO NOT EDIT THE HTML FILES!**
+**DO NOT PUSH THE HTML FILES TO master!**
 
 All changes should occur in the ".cr" files, which are the source files.
+
+== Updating
+
+After editing the WikiCreole files, one can use applyChanges.sh to run the necessary commands to generate .html files in the gh-pages branch.
+
+One should then commit and push the files, and, optionally, switch back to master ({{{git checkout master}}}).
