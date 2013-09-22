@@ -1,0 +1,4 @@
+= RoyalCommands Documentation =
+
+== Signs ==
+
