@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/findip - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/findip</h2>
+<h3>Basics</h3>
+<p><em>Finds players with a matching IP address.</em></p>
+<p><strong>Usage:</strong> /findip [ip]</p>
+<p><strong>Aliases:</strong> /fip</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.findip
+</li></ul>
+<p><strong> Configuration </strong></p>
+<ul><li><code>findip_alert_percentage</code>
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/findip</code> searches for a complete or partial IP address (<code>[ip]</code>) in all of the userdata files created by
+RoyalCommands and sends a list of players with matching IPs.</p>
+<p>Since this process requires sifting through potentially tens of thousands of files (depending on server size), it is
+configured to alert the sender every so often through configuration <code>findip_alert_percentage</code> of its progress.</p>
+<p>This command supports <a href="../name-completion.html">online name-completion</a>.</p>
+<h3>Examples</h3>
+<p><code>/findip 1.2.3.4</code> - Finds all players with the IP address <code>1.2.3.4</code>.<br>
+<code>/findip 1.2</code> - Finds all players with IP addresses that contain <code>1.2</code>.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

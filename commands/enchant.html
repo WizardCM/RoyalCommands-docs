@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/enchant - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/enchant</h2>
+<h3>Basics</h3>
+<p><em>Enchants the item in hand.</em></p>
+<p><strong>Usage:</strong> /enchant [enchantment/all] (level)</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.enchant
+</li><li>rcmds.enchant.levels
+</li><li>rcmds.enchant.illegal
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/enchant</code> applies <code>[enchantment]</code> or <code>[all]</code> enchantments to the item held by the sender. If
+<code>(level)</code> is not specified, the maximum possible vanilla level will be used. <code>(level)</code> can be specified as
+<code>max</code> to use the highest possible level supported by Java. <code>(level)</code> can also be a number.</p>
+<p>If the sender does not have <code>rcmds.enchant.levels</code>, he cannot enchant items with levels beyond their maximum
+vanilla level.</p>
+<p>If the sender does not have <code>rcmds.enchant.illegal</code>, he cannot apply enchantments to items that do not normally
+receive those enchantments.</p>
+<h3>Examples</h3>
+<p><code>/enchant durability</code> - Enchants the item in hand with <code>Durability</code> at its highest level.<br>
+<code>/enchant durability max</code> - Enchants the item in hand with <code>Durability</code> at the maximum level supported by
+Java.<br>
+<code>/enchant durability 10</code> - Enchants the item in hand with <code>Durability</code> at level <code>10</code>.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

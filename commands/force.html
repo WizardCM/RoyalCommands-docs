@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/force - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/force</h2>
+<h3>Basics</h3>
+<p><em>Forces a player to run a command.</em></p>
+<p><strong>Usage:</strong> /force [player] [command]</p>
+<p><strong>Aliases:</strong> /sudo, /run</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.force
+</li><li>rcmds.exempt.force
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/force</code> executes <code>[command]</code> as <code>[player]</code>, so long as the player is online. If <code>[player]</code> has
+<code>rcmds.exempt.force</code>, he cannot be forced to run commands.</p>
+<p>The <code>[command]</code> should not include the beginning <code>/</code>.</p>
+<p>This command supports <a href="../name-completion.html">online name-completion</a>.</p>
+<h3>Examples</h3>
+<p><code>/force Notch home</code> - Runs the command /<code>home</code> as <code>Notch</code>.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

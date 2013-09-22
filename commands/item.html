@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/item - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/item</h2>
+<h3>Basics</h3>
+<p><em>Adds an item to your inventory.</em></p>
+<p><strong>Usage:</strong> /item [item](:metadata) (amount)</p>
+<p><strong>Aliases:</strong> /i</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.item
+</li><li>rcmds.allowed.item
+</li></ul>
+<p><strong> Configuration </strong></p>
+<ul><li><code>drop_extras</code>
+</li><li><code>blocked_spawn_items</code>
+</li><li><code>default_stack_size</code>
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/item</code> adds <code>(amount)</code> of <code>[item]</code> to the sender's inventory. It varies from <a href="give.html">/give</a> in that
+items cannot be given to other players via this command. If <code>(amount)</code> is not specified, configuration
+<code>default_stack_size</code> will be used. Item IDs in <code>blocked_spawn_items</code> cannot be added using this command unless
+the sender has <code>rcmds.allowed.item.ID#</code>.</p>
+<h3>Examples</h3>
+<p><code>/item wood</code> - Adds <code>default_stack_size</code> of <code>wood</code> to the sender's inventory.<br>
+<code>/item wood:1 10</code> - Adds <code>10</code> of <code>wood:1</code> (spruce wood) to the sender's inventory.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

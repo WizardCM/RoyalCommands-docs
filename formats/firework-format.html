@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>formats/firework-format - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>Firework Format</h2>
+<p>If a component of RoyalCommands states that it supports <em>firework format</em>, then it will use the format detailed below as
+an argument.</p>
+<h3>Examples</h3>
+<p>Firework format is a system of keys and values, set up like <code>key:value</code>.</p>
+<p><strong>Keys:</strong></p>
+<ul><li><code>color</code>* - Color of the initial firework explosion
+</li><li><code>fade</code> - Color of the fading firework
+</li><li><code>shape</code>* - Shape of the explosion
+</li><li><code>effect</code> - Effects to be applied to the explosion
+</li><li><code>power</code> - How high the firework goes (each level is one half-second)
+</li></ul>
+<p>* - This tag is required.</p>
+<p><strong>Values:</strong></p>
+<ul><li>color/fade
+<ul><li>red
+</li><li>green
+</li><li>white
+</li><li>yellow
+</li><li>aqua
+</li><li>black
+</li><li>teal
+</li><li>purple
+</li><li>silver
+</li><li>fuchsia
+</li><li>orange
+</li><li>gray
+</li><li>olive
+</li><li>maroon
+</li><li>lime
+</li><li>navy
+</li><li>rgb
+<ul><li>#,#,#
+</li></ul></li><li>bgr
+<ul><li>#,#,#
+</li></ul></li></ul></li><li>shape
+<ul><li>ball
+</li><li>large_ball
+</li><li>star
+</li><li>creeper
+</li><li>burst
+</li></ul></li><li>effect
+<ul><li>flicker
+</li><li>trail
+</li></ul></li><li>power
+<ul><li># (0 - 128)
+</li></ul></li></ul>
+<p>An example firework format could be <code>shape:ball color:red fade:green power:2</code> or
+<code>shape:star color:rgb:255,255,255 fade:black effect:trail effect:flicker power:1</code>.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

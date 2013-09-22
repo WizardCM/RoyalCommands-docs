@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/delhome - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/delhome</h2>
+<h3>Basics</h3>
+<p><em>Deletes a home.</em></p>
+<p><strong>Usage:</strong> /delhome [home]</p>
+<p><strong>Aliases:</strong> /dhome, /rmhome, /deletehome, /removehome, /rdeletehome</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.delhome
+</li><li>rcmds.others.delhome
+</li><li>rcmds.exempt.delhome
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/delhome</code> deletes a home set by <a href="sethome.html">/sethome</a>. If the sender has <code>rcmds.others.delhome</code>, he can
+delete a home from another player, so long as that player does not have <code>rcmds.exempt.delhome</code>. See the below link
+about <em>home format</em> to see how other players' homes can be modified.</p>
+<p>This command supports <a href="../formats/home-format.html">home format</a>.</p>
+<h3>Examples</h3>
+<p><code>/delhome home</code> - Deletes the sender's main house, named <code>home</code>.<br>
+<code>/delhome mansion</code> - Deletes the home named <code>mansion</code> from the sender's homes.<br>
+<code>/delhome Notch:cottage</code> - Deletes the home named <code>cottage</code> from <code>Notch</code>'s homes.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

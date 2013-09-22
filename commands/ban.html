@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/ban - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/ban</h2>
+<h3>Basics</h3>
+<p><em>Bans a user.</em></p>
+<p><strong>Usage:</strong> /ban [player] (message)</p>
+<p><strong>Aliases:</strong> /rban, /banish</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.ban
+</li><li>rcmds.exempt.ban
+</li><li>rcmds.see.ban
+</li></ul>
+<p><strong> Configuration </strong></p>
+<ul><li><code>on_ban</code>
+</li><li><code>default_ban_message</code>
+</li><li><code>ingame_ban_format</code>
+</li><li><code>ban_format</code>
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/ban</code> is a server management tool that, if used, will prevent a player from connecting to the server under the
+same name. If the <code>(message)</code> argument is not used, the message from configuration <code>default_ban_message</code> will
+be used instead. The <code>(message)</code> argument supports <a href="../color-codes.html">color codes</a>.</p>
+<p><code>ingame_ban_format</code> is the message shown to players in-game about bans if they have the <code>rcmds.see.ban</code>
+permission node. The banned player will see <code>ban_format</code> when he tries to connect and when he is originally kicked.</p>
+<p>This command supports <a href="../name-completion.html">online name-completion</a>.</p>
+<h3>Examples</h3>
+<p><code>/ban Notch</code> - Bans Notch from connecting the server and will kick him off of the server if he is online.<br>
+<code>/ban Notch Leave now and never come back.</code> - Will ban Notch with the reason <code>Leave now and never come back.</code></p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

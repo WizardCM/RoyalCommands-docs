@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/give - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/give</h2>
+<h3>Basics</h3>
+<p><em>Gives a player items.</em></p>
+<p><strong>Usage:</strong> /give [player] [item](:metadata) (amount)</p>
+<p><strong>Aliases:</strong> /g</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.give
+</li></ul>
+<p><strong> Configuration </strong></p>
+<ul><li><code>default_stack_size</code>
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/give</code> adds <code>(amount)</code> of <code>[item]</code> to the inventory of <code>[player]</code>. If <code>(amount)</code> is not specified,
+configuration <code>default_stack_size</code> will be used.</p>
+<p>This command supports <a href="../name-completion.html">online name-completion</a>.</p>
+<h3>Examples</h3>
+<p><code>/give Notch wood</code> - Adds <code>default_stack_size</code> of <code>wood</code> to <code>Notch</code>'s inventory.<br>
+<code>/give Notch wood:1 10</code> - Adds <code>10</code> of <code>wood:1</code> (spruce wood) to <code>Notch</code>'s inventory.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/dump - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/dump</h2>
+<h3>Basics</h3>
+<p><em>Desc</em></p>
+<p><strong>Usage:</strong> /dump</p>
+<p><strong>Aliases:</strong> /empty, /store</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.dump
+</li></ul>
+<p><strong> Configuration </strong></p>
+<ul><li><code>dump_create_chest</code>
+</li><li><code>dump_use_inv</code>
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/dump</code> attempts to store the sender's inventory in a chest that the sender is looking at.</p>
+<p><code>/dump</code> will attempt to create a chest if configuration <code>dump_create_chest</code> is true. It will require a chest
+from the sender's inventory if configuration <code>dump_use_inv</code> is true. If configuration <code>dump_create_chest</code> is
+false, the sender must be looking at an already created chest to store his inventory. If it is true, a chest will be
+created where the sender is looking. WorldGuard and LWC are both checked before any actions are taken.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>commands/deafen - RoyalCommands Documentation</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.royaldev.org/bootstrap3/css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+      <h1>RoyalCommands Documentation</h1>
+<h2>/deafen</h2>
+<h3>Basics</h3>
+<p><em>Toggles whether a player can see messages.</em></p>
+<p><strong>Usage:</strong> /deafen (player)</p>
+<p><strong>Aliases:</strong> /deaf, /ignoreall</p>
+<p><strong>Permission Nodes</strong></p>
+<ul><li>rcmds.deafen
+</li><li>rcmds.others.deafen
+</li><li>rcmds.exempt.deafen
+</li></ul>
+<h3>In Depth</h3>
+<p><code>/deafen</code> toggles the state of being "deaf" on the sender or <code>(player)</code> if specified, so long as the sender has
+<code>rcmds.others.deafen</code> and <code>(player)</code> does not have <code>rcmds.exempt.deafen</code>.</p>
+<p>If a player is "deaf," he will not receive any player chat messages, but will still receive plugin messages.</p>
+<p>This command supports <a href="../name-completion.html">online name-completion</a>.</p>
+<h3>Examples</h3>
+<p><code>/deafen</code> - Toggles deaf status on the sender.<br>
+<code>/deafen Notch</code> - Toggles deaf status on <code>Notch</code>.</p>
+
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="footer">
+    <div class="fluid">
+      <div class="col-12 col-lg-8 col-lg-offset-2>
+        Some stuff here.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    
