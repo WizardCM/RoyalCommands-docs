@@ -4,5 +4,6 @@ _site
 # Sublime Text files
 *.sublime-*
 
-# Private command updater
+# Local Python scripts
 createCommands.py
+creoleToMarkdown.py

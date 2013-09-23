@@ -5,7 +5,8 @@ command:
   - bc
   - broadc
   - bcast
-  configuration: []
+  configuration:
+  - bcast_format
   description: Broadcasts a message to the server.
   permissions:
   - rcmds.broadcast
@@ -17,9 +18,8 @@ layout: command
 title: /broadcast
 ---
 
-In-depth content, and...
+```/broadcast``` will send a message formatted with configuration ```bcast_format``` to the server.
 
-### Examples
+### Examples 
 
-
-
+```/broadcast Hello!``` - Sends ```Hello!``` to the server with ```bcast_format``` applied to it.

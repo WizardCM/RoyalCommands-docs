@@ -5,7 +5,9 @@ command:
   - accs
   - ispremium
   - iscracked
-  configuration: []
+  configuration:
+  - afk_format
+  - return_format
   description: Checks to see if a name is premium.
   permissions:
   - rcmds.accountstatus

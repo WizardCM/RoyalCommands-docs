@@ -8,17 +8,19 @@ command:
   description: Clears your inventory.
   permissions:
   - rcmds.clearinventory
+  - rcmds.others.clearinventory
   supports:
-    name-completion: false
+    name-completion: true
     time-format: false
   usage: /clearinventory (user)
 layout: command
 title: /clearinventory
 ---
 
-In-depth content, and...
+```/clearinventory``` removes all items from the sender's inventory (or ```(user)```'s, if the sender has
+```rcmds.others.clearinventory```) except for armor being worn.
 
-### Examples
+### Examples 
 
-
-
+```/clearinventory``` - Removes all items from the sender's inventory.  
+```/clearinventory Notch``` - Removes all items from ```Notch```'s inventory.

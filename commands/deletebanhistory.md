@@ -10,16 +10,16 @@ command:
   permissions:
   - rcmds.deletebanhistory
   supports:
-    name-completion: false
+    name-completion: true
     time-format: false
   usage: /deletebanhistory [player] [ban#]
 layout: command
 title: /deletebanhistory
 ---
 
-In-depth content, and...
+```/deletebanhistory``` deletes ban history record ```[ban#]``` (seen in [[banhistory.html|/banhistory]]) off of
+```[player]```. A record that is deleted will no longer appear on ```[player]```'s ban history.
 
-### Examples
+### Examples 
 
-
-
+```/deletebanhistory Notch 1``` - Deletes ban ```1``` from ```Notch```'s ban history.

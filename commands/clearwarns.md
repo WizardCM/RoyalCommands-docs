@@ -12,16 +12,15 @@ command:
   permissions:
   - rcmds.clearwarns
   supports:
-    name-completion: false
+    name-completion: true
     time-format: false
   usage: /clearwarns [player]
 layout: command
 title: /clearwarns
 ---
 
-In-depth content, and...
+```/clearwarns``` removes all warnings ```[player]``` has incurred via [[warn.html|/warn]].
 
-### Examples
+### Examples 
 
-
-
+```/clearwarns Notch``` - Removes all warnings that ```Notch``` has.

@@ -8,6 +8,8 @@ command:
   description: Toggles whether a player can see messages.
   permissions:
   - rcmds.deafen
+  - rcmds.others.deafen
+  - rcmds.exempt.deafen
   supports:
     name-completion: false
     time-format: false
@@ -16,9 +18,12 @@ layout: command
 title: /deafen
 ---
 
-In-depth content, and...
+```/deafen``` toggles the state of being "deaf" on the sender or ```(player)``` if specified, so long as the sender has
+```rcmds.others.deafen``` and ```(player)``` does not have ```rcmds.exempt.deafen```.
 
-### Examples
+If a player is "deaf," he will not receive any player chat messages, but will still receive plugin messages.
 
+### Examples 
 
-
+```/deafen``` - Toggles deaf status on the sender.  
+```/deafen Notch``` - Toggles deaf status on ```Notch```.

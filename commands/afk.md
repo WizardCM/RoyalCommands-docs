@@ -15,9 +15,5 @@ layout: command
 title: /afk
 ---
 
-In-depth content, and...
-
-### Examples
-
-
-
+```/afk``` marks the player using the command as away from the keyboard (AFK) and will send out an alert stating such.
+If the player chats or moves afterward, another alert will be sent out, notifying of the player's return.

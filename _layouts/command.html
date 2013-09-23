@@ -14,7 +14,7 @@ layout: default
 <p><strong>Permission Nodes</strong></p>
 <ul>
 {% for node in page.command.permissions %}
-  <li>{{ node }}</li>
+  <li><code>{{ node }}</code></li>
 {% endfor %}
 </ul>
 {% endunless %}
@@ -22,7 +22,7 @@ layout: default
 <p><strong>Configuration </strong></p>
 <ul>
 {% for node in page.command.configuration %}
-  <li>{{ node }}</li>
+  <li><code>{{ node }}</code></li>
 {% endfor %}
 </ul>
 {% endunless %}
@@ -33,6 +33,12 @@ layout: default
   <p>This command supports <a href="../name-completion.html">online name-completion</a>.</p>
 {% endif %}
 {% if page.command.supports.time-format %}
-  <p>This command supports <a href="../time-format.html">time format</a>.</p>
+  <p>This command supports <a href="../formats/time-format.html">time format</a>.</p>
+{% endif %}
+{% if page.command.supports.firework-format %}
+  <p>This command supports <a href="../formats/firework-format.html">firework format</a>.</p>
+{% endif %}
+{% if page.command.supports.home-format %}
+  <p>This command supports <a href="../formats/home-format.html">home format</a>.</p>
 {% endif %}
 </div>

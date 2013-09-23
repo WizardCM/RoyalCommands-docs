@@ -7,16 +7,18 @@ command:
   permissions:
   - rcmds.banip
   supports:
-    name-completion: false
+    name-completion: true
     time-format: false
   usage: /banip (player/IP)
 layout: command
 title: /banip
 ---
 
-In-depth content, and...
+```/banip``` allows for IP addresses to be blocked from connecting to the server. The ```(player/IP)``` argument will
+accept a player name, offline or online, or an IP address. If given a player name, it will find the player's last IP
+address and ban it. If given an IP, it will ban the IP.
 
-### Examples
+### Examples 
 
-
-
+```/banip 1.2.3.4``` - Bans the IP ```1.2.3.4```.  
+```/banip Notch``` - Bans ```Notch```'s last IP.

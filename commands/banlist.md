@@ -15,9 +15,8 @@ layout: command
 title: /banlist
 ---
 
-In-depth content, and...
+```/banlist``` displays all banned players on the server.
 
-### Examples
+### Examples 
 
-
-
+```/banlist``` - Displays all banned players.

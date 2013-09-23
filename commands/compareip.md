@@ -4,7 +4,8 @@ command:
   aliases:
   - compip
   - cip
-  configuration: []
+  configuration:
+  - disable_getip
   description: Compare two users' IP addresses.
   permissions:
   - rcmds.compareip
@@ -16,9 +17,11 @@ layout: command
 title: /compareip
 ---
 
-In-depth content, and...
+```/compareip``` retrieves and displays two IP addresses, one from ```[player1]``` and one from ```[player2]```.
 
-### Examples
+This may be a useful instrument when determining if a player is using an alternate account or if a player lives with
+another player.
 
+### Examples 
 
-
+```/compareip Notch jeb_``` - Shows the IP of ```Notch``` and the IP of ```jeb_```.
