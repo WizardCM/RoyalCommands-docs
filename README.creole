@@ -1,9 +1,0 @@
-= RoyalCommands Docs
-
-This is the source for the RoyalCommands documentation. Changes made here will affect the live docs.
-
-It is all written in WikiCreole.
-
-**DO NOT EDIT THE HTML FILES!**
-
-All changes should occur in the ".cr" files, which are the source files.
