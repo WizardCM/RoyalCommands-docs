@@ -1,0 +1,6 @@
+name: RoyalCommands Documentation
+markdown: redcarpet
+redcarpet:
+  extensions: ["autolink", "tables"]
+pygments: true
+timezone: America/Detroit

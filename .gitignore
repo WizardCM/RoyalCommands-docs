@@ -1,0 +1,8 @@
+# Jekyll local site builds
+_site
+
+# Sublime Text files
+*.sublime-*
+
+# Private command updater
+createCommands.py

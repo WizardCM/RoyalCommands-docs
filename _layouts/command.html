@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<h1>RoyalCommands Documentation</h1>
+<h2>{{ page.title }}</h2>
+<h3>Basics</h3>
+<p><em>{{ page.command.description }}</em></p>
+<p><strong>Usage:</strong> {{page.command.usage }}</p>
+{% unless page.command.aliases == empty %}
+<p><strong>Aliases:</strong> {% for alias in page.command.aliases %} /{{ alias }}{% unless forloop.last %},{% endunless %} {% endfor %}</p>
+{% endunless %}
+{% unless page.command.permissions == empty %}
+<p><strong>Permission Nodes</strong></p>
+<ul>
+{% for node in page.command.permissions %}
+  <li>{{ node }}</li>
+{% endfor %}
+</ul>
+{% endunless %}
+{% unless page.command.configuration == empty %}
+<p><strong>Configuration </strong></p>
+<ul>
+{% for node in page.command.configuration %}
+  <li>{{ node }}</li>
+{% endfor %}
+</ul>
+{% endunless %}
+<h3>In Depth</h3>
+{{ content }}
+<div class="text-muted">
+{% if page.command.supports.name-completion %}
+  <p>This command supports <a href="../name-completion.html">online name-completion</a>.</p>
+{% endif %}
+{% if page.command.supports.time-format %}
+  <p>This command supports <a href="../time-format.html">time format</a>.</p>
+{% endif %}
+</div>
