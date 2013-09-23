@@ -3,7 +3,9 @@ command:
   added: Pre-0.2.7
   aliases:
   - away
-  configuration: []
+  configuration:
+  - afk_format
+  - return_format
   description: Marks the player as away from keyboard.
   permissions:
   - rcmds.afk
