@@ -20,3 +20,4 @@ title: /banlist
 ### Examples 
 
 ```/banlist``` - Displays all banned players.
+

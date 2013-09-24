@@ -29,3 +29,4 @@ sender's current world.
 
 ```/compass player Notch``` - Sets the sender's compass to point at ```Notch```.  
 ```/compass location 0 1 2``` - Sets the sender's compass to point at the coordinates ```0```, ```1```, ```2```.
+

@@ -27,3 +27,4 @@ and the sender has ```rcmds.other.coords```.
 
 ```/coords``` - Shows the coordinates of the sender to himself.  
 ```/coords Notch``` - Shows the coordinates of ```Notch``` to the sender.
+

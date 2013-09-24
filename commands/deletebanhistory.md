@@ -23,3 +23,4 @@ title: /deletebanhistory
 ### Examples 
 
 ```/deletebanhistory Notch 1``` - Deletes ban ```1``` from ```Notch```'s ban history.
+

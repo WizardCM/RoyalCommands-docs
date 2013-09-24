@@ -24,3 +24,4 @@ assumed.
 
 ```/burn Notch``` - Sets ```Notch``` on fire for five seconds.  
 ```/burn Notch 20``` - Sets ```Notch``` on fire for ```20``` seconds.
+

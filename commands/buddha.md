@@ -28,3 +28,4 @@ toggle buddha mode on the given player.
 
 ```/buddha``` - Toggles the buddha mode status on the command sender.  
 ```/buddha Notch``` - Toggles ```Notch```'s buddha mode status.
+

@@ -33,3 +33,4 @@ permission node. The banned player will see ```ban_format``` when he tries to co
 
 ```/ban Notch``` - Bans Notch from connecting the server and will kick him off of the server if he is online.  
 ```/ban Notch Leave now and never come back.``` - Will ban Notch with the reason ```Leave now and never come back.```
+

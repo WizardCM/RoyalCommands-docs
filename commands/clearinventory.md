@@ -24,3 +24,4 @@ title: /clearinventory
 
 ```/clearinventory``` - Removes all items from the sender's inventory.  
 ```/clearinventory Notch``` - Removes all items from ```Notch```'s inventory.
+

@@ -23,3 +23,4 @@ number. Executing ```/banhistory playerName number``` will display information a
 
 ```/banhistory Notch``` - Displays the amount of bans ```Notch``` has.  
 ```/banhistory Notch 1``` - Displays information about ban ```1``` on ```Notch```'s account.
+

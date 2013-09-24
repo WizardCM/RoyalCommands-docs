@@ -14,9 +14,9 @@ command:
   - rcmds.others.delhome
   - rcmds.exempt.delhome
   supports:
+    home-format: true
     name-completion: false
     time-format: false
-    home-format: true
   usage: /delhome [home]
 layout: command
 title: /delhome
@@ -31,3 +31,4 @@ about *home format* to see how other players' homes can be modified.
 ```/delhome home``` - Deletes the sender's main house, named ```home```.  
 ```/delhome mansion``` - Deletes the home named ```mansion``` from the sender's homes.  
 ```/delhome Notch:cottage``` - Deletes the home named ```cottage``` from ```Notch```'s homes.
+

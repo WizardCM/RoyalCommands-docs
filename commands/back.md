@@ -28,3 +28,4 @@ can be used as ```/back #``` to go to that particular previous location.
 ```/back``` - Takes the player to his most recent previous location.  
 ```/backs``` - Displays the player's previous locations.  
 ```/back 3``` - Take the player to his third most recent previous location (as can be viewed from ```/backs```).
+

@@ -23,3 +23,4 @@ title: /broadcast
 ### Examples 
 
 ```/broadcast Hello!``` - Sends ```Hello!``` to the server with ```bcast_format``` applied to it.
+

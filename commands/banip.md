@@ -22,3 +22,4 @@ address and ban it. If given an IP, it will ban the IP.
 
 ```/banip 1.2.3.4``` - Bans the IP ```1.2.3.4```.  
 ```/banip Notch``` - Bans ```Notch```'s last IP.
+

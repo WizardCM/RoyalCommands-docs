@@ -26,3 +26,4 @@ To see the changes immediately (grass color, etc.) use [[fixchunk.html|/fixchunk
 ```/biome plains``` - Changes the biome the player is standing in to ```plains```.  
 ```/biome plains 3``` - Changes the biome the player is standing in and all chunks within a ```3``` chunk radius to
 ```plains```.
+

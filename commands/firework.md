@@ -8,9 +8,9 @@ command:
   permissions:
   - rcmds.firework
   supports:
+    firework-format: true
     name-completion: false
     time-format: false
-    firework-format: true
   usage: /firework [tags]
 layout: command
 title: /firework
@@ -25,3 +25,4 @@ This command supports [[../formats/firework-format.html|firework format]].
 
 ```/firework clear``` - Removes all effects from the firework in hand.  
 ```/firework shape:ball color:red``` - Adds a red ball shape to the firework in hand.
+

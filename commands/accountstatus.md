@@ -24,3 +24,4 @@ use on online-mode servers.
 ### Examples
 
 ```/accountstatus Notch``` - Checks to see if ```Notch``` has bought Minecraft.
+

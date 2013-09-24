@@ -25,3 +25,4 @@ another player.
 ### Examples 
 
 ```/compareip Notch jeb_``` - Shows the IP of ```Notch``` and the IP of ```jeb_```.
+

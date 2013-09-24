@@ -18,5 +18,3 @@ In-depth content, and...
 
 ### Examples
 
-
-

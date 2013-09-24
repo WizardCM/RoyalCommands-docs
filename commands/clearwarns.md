@@ -24,3 +24,4 @@ title: /clearwarns
 ### Examples 
 
 ```/clearwarns Notch``` - Removes all warnings that ```Notch``` has.
+

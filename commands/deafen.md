@@ -27,3 +27,4 @@ If a player is "deaf," he will not receive any player chat messages, but will st
 
 ```/deafen``` - Toggles deaf status on the sender.  
 ```/deafen Notch``` - Toggles deaf status on ```Notch```.
+

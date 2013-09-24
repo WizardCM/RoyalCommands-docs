@@ -32,3 +32,4 @@ past bans, try [[banhistory.html|/banhistory]] instead.
 ### Examples 
 
 ```/baninfo jeb_``` - Gets the information available about ```jeb_```'s current ban.
+

@@ -34,3 +34,4 @@ differentiate between items with different display names (and lore) and differen
 to the block he is looking at.  
 ```/assign c:Hello!``` - This will assign the chat message ```Hello!``` to the item in the player's hand, allowing him
 to click and say ```Hello!```.
+

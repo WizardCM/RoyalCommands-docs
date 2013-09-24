@@ -28,3 +28,4 @@ The backpack for other players can be viewed using ```/backpack playerName``` if
 
 ```/backpack``` - Opens a personal storage container for the player.  
 ```/backpack joe``` - Opens the personal storage container for ```joe```.
+
