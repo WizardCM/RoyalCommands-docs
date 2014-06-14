@@ -1,0 +1,98 @@
+---
+layout: titled
+title: Firework Format
+extra_css: |
+  <link rel="stylesheet" href="/css/bootstrap-dl.css"/>
+  <link rel="stylesheet" href="/css/bootstrap-table.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <style>code { font-family: "Inconsolata", monospace; } ul { margin: 0; }</style>
+---
+
+<p>
+  If a component of RoyalCommands states that it supports <em>firework format</em>, then it will use the format detailed
+  below as an argument.
+</p>
+
+<h3>Examples</h3>
+<p>
+  Firework format is a system of keys and values, set up like <code>key:value</code>.
+</p>
+<dl class="dl-horizontal">
+  <dt>Keys</dt>
+  <dd>
+    <table class="table table-condensed">
+      <tr>
+        <td>color*</td>
+        <td>Color of the initial firework explosion</td>
+      </tr>
+      <tr>
+        <td>fade<td>
+        <td>Color of the fading firework</td>
+      </tr>
+      <tr>
+        <td>shape*<td>
+        <td>Shape of the explosion</td>
+      </tr>
+      <tr>
+        <td>effect<td>
+        <td>Effects to be applied to the explosion</td>
+      </tr>
+      <tr>
+        <td>power<td>
+        <td>How high the firework goes (each level is one half-second)</td>
+      </tr>
+    </table>
+    <p class="text-muted">
+      <small>* - This tag is required.</small>
+    </p>
+  </dd>
+  <dt>Values</dt>
+  <dd>
+    <ul class="unstyled">
+      <li>color/fade</li>
+      <li>
+        <ul>
+          <li>red</li>
+        </ul>
+      </li>
+    </ul>
+  </dd>
+</dl>
+
+**Values:**
+
+  * color/fade
+    * red
+    * green
+    * white
+    * yellow
+    * aqua
+    * black
+    * teal
+    * purple
+    * silver
+    * fuchsia
+    * orange
+    * gray
+    * olive
+    * maroon
+    * lime
+    * navy
+    * rgb
+      * &#35;,&#35;,&#35;
+    * bgr
+      * &#35;,&#35;,&#35;
+  * shape
+    * ball
+    * large_ball
+    * star
+    * creeper
+    * burst
+  * effect
+    * flicker
+    * trail
+  * power
+    * &#35; (0 - 128)
+
+An example firework format could be ```shape:ball color:red fade:green power:2``` or
+```shape:star color:rgb:255,255,255 fade:black effect:trail effect:flicker power:1```.

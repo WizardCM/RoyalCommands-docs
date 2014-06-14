@@ -7,3 +7,13 @@ _site
 # Local Python scripts
 createCommands.py
 creoleToMarkdown.py
+
+# SASS
+.sass-cache
+
+# JetBrains
+.idea
+*.iml
+
+# OS X
+.DS_Store

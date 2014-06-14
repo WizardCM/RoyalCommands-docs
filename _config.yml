@@ -1,6 +1,5 @@
-name: RoyalCommands Documentation
-markdown: redcarpet
-redcarpet:
-  extensions: ["autolink", "tables"]
-pygments: true
-timezone: America/Detroit
+markdown: kramdown
+sass:
+  sass_dir: css
+  style: :compressed
+exclude: [.git, .gitignore, build.sh]
