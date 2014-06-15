@@ -17,3 +17,6 @@ creoleToMarkdown.py
 
 # OS X
 .DS_Store
+
+# Build script
+build.sh
