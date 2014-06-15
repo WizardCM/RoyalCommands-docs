@@ -31,7 +31,7 @@ code {
   padding: 2px;
   line-height: $line-height-base + 6; // 2 top and bottom plus 1 extra for top and bottom
   border-radius: 3px;
-  @media (min-height: $screen-sm-min) { white-space: nowrap; }
+  @media (min-width: $screen-sm-min) { white-space: nowrap; }
 }
 
 ul, ol {
