@@ -3,7 +3,7 @@ command:
   added: Pre-0.2.7
   aliases: []
   configuration: []
-  description: Levels your experience up one level.
+  description: Increases your experience level by one.
   permissions:
   - rcmds.level
   supports:
