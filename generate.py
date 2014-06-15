@@ -15,17 +15,17 @@ def download():
         print("Could not parse plugin.yml: %s" % e)
 
 def generate_index():
-    if not exists("commands/index.html"):
+    if not exists("commands.html"):
         front_matter = """---\nlayout: titled\ntitle: Commands\nextra_css: |\n  <link rel="stylesheet" href="/css/bootstrap-table.css"/>\n  <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.5.0(forms-min.css)"/>\n  <style>table { margin-top: 10px; }</style>\nextra_javascript: |\n  <script src="/js/list.min.js"></script>\n  <script>new List("command_list", { valueNames: ["command"] });</script>\n---"""
     else:
-        f = open("commands/index.html")
+        f = open("commands.html")
         index = f.read()
         front_matter = "---".join(index.split("---")[:2]) + "---\n"
     index = """<div id="command_list">\n  <div class="pure-form">\n    <input id="command_search" type="text" class="search pure-input-1 pure-input-rounded" placeholder="Search"/>\n  </div>\n  <table class="table">\n    <thead>\n      <tr>\n        <th>Command</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody class="list">\n"""
     for command in sorted(data["reflectcommands"]):
         index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/%s\">/%s</a></td>\n        <td>%s</td>\n      </tr>\n" % (command, command, data["reflectcommands"][command]["description"])
     index += "    </tbody>\n  </table>\n</div>\n"
-    f = open("commands/index.html", "w")
+    f = open("commands.html", "w")
     f.write("%s%s" % (front_matter, index))
     f.flush()
     f.close()
