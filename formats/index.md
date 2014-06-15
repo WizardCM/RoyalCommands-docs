@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: titled
 title: Formats
 ---
 # RoyalCommands Documentation
