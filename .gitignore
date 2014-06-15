@@ -20,6 +20,3 @@ creoleToMarkdown.py
 
 # Build script
 build.sh
-
-# Local scripts
-generate.py
