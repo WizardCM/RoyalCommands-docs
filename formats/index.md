@@ -3,7 +3,7 @@ layout: titled
 title: Formats
 ---
 
-* [Effect Format](effect-format.html)
-* [Home Format](home-format.html)
-* [Time Format](time-format.html)
-* [Firework Format](firework-format.html)
+* [Effect Format](effect-format)
+* [Home Format](home-format)
+* [Time Format](time-format)
+* [Firework Format](firework-format)
