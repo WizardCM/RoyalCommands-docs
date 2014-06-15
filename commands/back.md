@@ -12,7 +12,7 @@ command:
   supports:
     name-completion: false
     time-format: false
-  usage: /back
+  usage: /back (#)
 layout: command
 title: /back
 ---
