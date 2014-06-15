@@ -8,7 +8,7 @@ command:
   - homes
   - rlisthomes
   configuration: []
-  description: List your set homes.
+  description: Lists your set homes.
   permissions:
   - rcmds.listhome
   supports:

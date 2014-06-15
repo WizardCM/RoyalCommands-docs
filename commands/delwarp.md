@@ -7,7 +7,7 @@ command:
   - rmwarp
   - removewarp
   configuration: []
-  description: Delete a warp point.
+  description: Deletes a warp point.
   permissions:
   - rcmds.delwarp
   supports:

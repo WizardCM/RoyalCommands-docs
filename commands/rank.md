@@ -3,7 +3,7 @@ command:
   added: Pre-0.2.7
   aliases: []
   configuration: []
-  description: Check the rank of the specified player (permissions).
+  description: Checks the rank of the specified player (permissions).
   permissions:
   - rcmds.rank
   supports:

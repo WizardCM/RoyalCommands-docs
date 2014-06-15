@@ -5,7 +5,7 @@ command:
   - mkwarp
   - createwarp
   configuration: []
-  description: Set a warp point.
+  description: Sets a warp point.
   permissions:
   - rcmds.setwarp
   supports:

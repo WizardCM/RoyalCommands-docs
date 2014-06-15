@@ -4,7 +4,7 @@ command:
   aliases:
   - r
   configuration: []
-  description: Reply to a message.
+  description: Replies to a message.
   permissions:
   - rcmds.reply
   supports:

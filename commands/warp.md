@@ -4,7 +4,7 @@ command:
   aliases:
   - warps
   configuration: []
-  description: Go to a warp point.
+  description: Moves you to a warp point.
   permissions:
   - rcmds.warp
   supports:

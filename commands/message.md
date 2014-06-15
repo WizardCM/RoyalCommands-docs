@@ -8,7 +8,7 @@ command:
   - whisper
   - w
   configuration: []
-  description: Send a message to a player.
+  description: Sends a message to a player.
   permissions:
   - rcmds.message
   supports:

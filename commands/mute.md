@@ -4,7 +4,7 @@ command:
   aliases:
   - silence
   configuration: []
-  description: Stop a user from speaking.
+  description: Stops a user from speaking.
   permissions:
   - rcmds.mute
   supports:
