@@ -10,7 +10,8 @@ command:
   - teleportptop
   configuration: []
   description: Teleports one player to another.
-  permissions: []
+  permissions:
+  - rcmds.teleportplayertoplayer
   supports: {}
   usage: /teleportplayertoplayer [player] [player]
 layout: command

@@ -7,7 +7,8 @@ command:
   - tpaall
   configuration: []
   description: Sends a teleport request to everyone.
-  permissions: []
+  permissions:
+  - rcmds.teleportrequestall
   supports: {}
   usage: /teleportrequestall
 layout: command

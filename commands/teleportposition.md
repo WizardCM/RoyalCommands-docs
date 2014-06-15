@@ -13,7 +13,8 @@ command:
   - tposition
   configuration: []
   description: Teleports you to a specific coordinate point.
-  permissions: []
+  permissions:
+  - rcmds.teleportposition
   supports: {}
   usage: /teleportposition [x] [y] [z] (world)
 layout: command

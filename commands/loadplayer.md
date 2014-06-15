@@ -5,7 +5,8 @@ command:
   - lp
   configuration: []
   description: Loads an individual player's data.
-  permissions: []
+  permissions:
+  - rcmds.loadplayer
   supports: {}
   usage: /loadplayer [player]
 layout: command

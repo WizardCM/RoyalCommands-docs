@@ -9,7 +9,8 @@ command:
   - tprc
   configuration: []
   description: Cancels a teleport request.
-  permissions: []
+  permissions:
+  - rcmds.teleportrequestcancel
   supports: {}
   usage: /teleportrequestcancel [player]
 layout: command

@@ -6,7 +6,8 @@ command:
   - toggletp
   configuration: []
   description: Toggles teleportation.
-  permissions: []
+  permissions:
+  - rcmds.teleporttoggle
   supports: {}
   usage: /teleporttoggle
 layout: command

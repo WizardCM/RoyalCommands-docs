@@ -49,7 +49,7 @@ def generate_files():
         if "aliases" in command_data: fm_command["aliases"] = command_data["aliases"]
         fm_command["usage"] = command_data["usage"].replace("<command>", command)
         if "configuration" not in fm_command: fm_command["configuration"] = []
-        if "permissions" not in fm_command: fm_command["permissions"] = []
+        if "permissions" not in fm_command or len(fm_command["permissions"]) < 1: fm_command["permissions"] = ["rcmds.%s" % command]
         supports = fm_command["supports"] if "supports" in fm_command else {}
         fm_command["supports"] = supports
         front_matter["command"] = fm_command

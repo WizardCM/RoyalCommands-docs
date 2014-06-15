@@ -5,7 +5,8 @@ command:
   - tpall
   configuration: []
   description: Teleports everyone to you.
-  permissions: []
+  permissions:
+  - rcmds.teleportall
   supports: {}
   usage: /teleportall
 layout: command

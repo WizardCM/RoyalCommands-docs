@@ -8,7 +8,8 @@ command:
   - tpaccept
   configuration: []
   description: Accepts a teleport request.
-  permissions: []
+  permissions:
+  - rcmds.teleportaccept
   supports: {}
   usage: /teleportaccept (name)
 layout: command

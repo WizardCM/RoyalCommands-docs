@@ -8,7 +8,8 @@ command:
   - tpdeny
   configuration: []
   description: Denies a teleport request.
-  permissions: []
+  permissions:
+  - rcmds.teleportdeny
   supports: {}
   usage: /teleportdeny (name)
 layout: command

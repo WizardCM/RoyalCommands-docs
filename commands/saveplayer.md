@@ -5,7 +5,8 @@ command:
   - sp
   configuration: []
   description: Saves an individual player's data.
-  permissions: []
+  permissions:
+  - rcmds.saveplayer
   supports: {}
   usage: /saveplayer [player]
 layout: command
