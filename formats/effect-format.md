@@ -3,10 +3,6 @@ layout: titled
 title: Effect Format
 ---
 
-# RoyalCommands Documentation
-
-## Effect Format
-
 If a component of RoyalCommands states that it supports *effect format*, then it will use the format detailed below as
 an argument.
 

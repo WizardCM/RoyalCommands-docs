@@ -2,9 +2,6 @@
 layout: titled
 title: Formats
 ---
-# RoyalCommands Documentation
-
-## Formats
 
 * [Effect Format](effect-format.html)
 * [Home Format](home-format.html)

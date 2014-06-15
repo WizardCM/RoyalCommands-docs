@@ -1,11 +1,7 @@
 ---
-layout: default
+layout: titled
 title: Time Format
 ---
-
-# RoyalCommands Documentation
-
-## Time Format
 
 If a component of RoyalCommands states that it supports *time format*, then it will allow for a string to represent a
 time, as seen below.

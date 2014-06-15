@@ -1,11 +1,7 @@
 ---
-layout: default
+layout: titled
 title: Home Format
 ---
-
-# RoyalCommands Documentation
-
-## Home Format
 
 If a component of RoyalCommands states that it supports *home format*, then it will use the format detailed below as an
 argument.
