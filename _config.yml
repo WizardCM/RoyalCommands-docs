@@ -2,4 +2,4 @@ markdown: kramdown
 sass:
   sass_dir: css
   style: :compressed
-exclude: [.git, .gitignore, build.sh]
+exclude: [.git, .gitignore, build.sh, generate.py]
