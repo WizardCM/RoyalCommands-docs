@@ -73,6 +73,10 @@ ul, ol {
   }
 }
 
+.pure-form {
+  input:focus { border-color: $accent; }
+}
+
 .page-header {
    border-bottom: 1px solid $accent;
    padding-bottom: 2px;
