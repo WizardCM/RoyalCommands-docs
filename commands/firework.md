@@ -19,7 +19,7 @@ title: /firework
 ```/firework``` applies firework effects to a firework held in the hand of the sender. The effects applied are
 specified by ```[tags]```, which can be seen in the *firework format* link below.
 
-This command supports [[/formats/firework-format|firework format]].
+This command supports [firework format](/formats/firework-format).
 
 ### Examples
 
