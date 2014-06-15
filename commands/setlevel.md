@@ -6,7 +6,7 @@ command:
   - slevel
   - setlvl
   configuration: []
-  description: Sets your XP level to specified amount.
+  description: Sets your or another player's XP level to specified level.
   permissions:
   - rcmds.setlevel
   supports:
