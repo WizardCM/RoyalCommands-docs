@@ -27,7 +27,7 @@ title: /baninfo
 ---
 
 ```/baninfo``` displays all recorded information about a player that is banned. If you are looking for information on
-past bans, try [[banhistory|/banhistory]] instead.
+past bans, try [/banhistory](/commands/banhistory) instead.
 
 ### Examples
 
