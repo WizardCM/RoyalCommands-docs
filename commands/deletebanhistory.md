@@ -1,6 +1,6 @@
 ---
 command:
-  added: 0.2.8
+  added: 3.2.0
   aliases:
   - dbh
   - rbh

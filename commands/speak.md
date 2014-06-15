@@ -3,7 +3,7 @@ command:
   added: Pre-0.2.7
   aliases: []
   configuration: []
-  description: Make another player talk.
+  description: Makes another player talk.
   permissions:
   - rcmds.speak
   supports:

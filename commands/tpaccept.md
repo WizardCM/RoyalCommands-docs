@@ -2,8 +2,9 @@
 command:
   added: Pre-0.2.7
   aliases:
-  - tpac
+  - tpaa
   - tpyes
+  - tpay
   configuration: []
   description: Accepts a teleport request.
   permissions:
@@ -11,7 +12,7 @@ command:
   supports:
     name-completion: false
     time-format: false
-  usage: /tpaccept
+  usage: /tpaccept (name)
 layout: command
 title: /tpaccept
 ---

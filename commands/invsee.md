@@ -4,7 +4,7 @@ command:
   aliases:
   - invs
   configuration: []
-  description: Allows you to see the inventory or a player.
+  description: Allows you to see the inventory of a player.
   permissions:
   - rcmds.invsee
   supports:

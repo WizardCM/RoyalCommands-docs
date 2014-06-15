@@ -1,0 +1,13 @@
+---
+command:
+  added: 3.3.0
+  aliases:
+  - lp
+  configuration: []
+  description: Loads an individual player's data.
+  permissions: []
+  supports: {}
+  usage: /loadplayer [player]
+layout: command
+title: /loadplayer
+---

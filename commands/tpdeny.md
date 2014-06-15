@@ -4,6 +4,7 @@ command:
   aliases:
   - tpad
   - tpno
+  - tpan
   configuration: []
   description: Denies a teleport request.
   permissions:
@@ -11,7 +12,7 @@ command:
   supports:
     name-completion: false
     time-format: false
-  usage: /tpdeny
+  usage: /tpdeny (name)
 layout: command
 title: /tpdeny
 ---
