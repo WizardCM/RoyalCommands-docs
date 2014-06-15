@@ -19,11 +19,11 @@ it will set the biome of all chunks in that radius from the chunk the player is 
 
 Doing the command without arguments will display a list of valid biomes to use for ```[biome]```.
 
-To see the changes immediately (grass color, etc.) use [[fixchunk.html|/fixchunk]] to resend the chunk.
+To see the changes immediately (grass color, etc.) use [[fixchunk|/fixchunk]] to resend the chunk.
 
-### Examples 
+### Examples
 
-```/biome plains``` - Changes the biome the player is standing in to ```plains```.  
+```/biome plains``` - Changes the biome the player is standing in to ```plains```.
 ```/biome plains 3``` - Changes the biome the player is standing in and all chunks within a ```3``` chunk radius to
 ```plains```.
 

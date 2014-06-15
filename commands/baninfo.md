@@ -27,9 +27,9 @@ title: /baninfo
 ---
 
 ```/baninfo``` displays all recorded information about a player that is banned. If you are looking for information on
-past bans, try [[banhistory.html|/banhistory]] instead.
+past bans, try [[banhistory|/banhistory]] instead.
 
-### Examples 
+### Examples
 
 ```/baninfo jeb_``` - Gets the information available about ```jeb_```'s current ban.
 

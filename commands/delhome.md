@@ -22,13 +22,13 @@ layout: command
 title: /delhome
 ---
 
-```/delhome``` deletes a home set by [/sethome](sethome.html). If the sender has ```rcmds.others.delhome```, he can
+```/delhome``` deletes a home set by [/sethome](sethome). If the sender has ```rcmds.others.delhome```, he can
 delete a home from another player, so long as that player does not have ```rcmds.exempt.delhome```. See the below link
 about *home format* to see how other players' homes can be modified.
 
-### Examples 
+### Examples
 
-```/delhome home``` - Deletes the sender's main house, named ```home```.  
-```/delhome mansion``` - Deletes the home named ```mansion``` from the sender's homes.  
+```/delhome home``` - Deletes the sender's main house, named ```home```.
+```/delhome mansion``` - Deletes the home named ```mansion``` from the sender's homes.
 ```/delhome Notch:cottage``` - Deletes the home named ```cottage``` from ```Notch```'s homes.
 
