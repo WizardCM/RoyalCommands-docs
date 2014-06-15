@@ -74,7 +74,7 @@ ul, ol {
 }
 
 .pure-form {
-  input:focus { border-color: $accent; }
+  input[type="text"]:focus { border-color: $accent; }
 }
 
 .page-header {
