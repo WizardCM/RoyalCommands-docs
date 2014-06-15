@@ -6,7 +6,7 @@ command:
   - cip
   configuration:
   - disable_getip
-  description: Compare two users' IP addresses.
+  description: Compares two users' IP addresses.
   permissions:
   - rcmds.compareip
   supports:
