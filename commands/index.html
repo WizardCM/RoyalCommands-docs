@@ -2,6 +2,7 @@
 layout: titled
 title: Commands
 extra_css: |
+  <link rel="stylesheet" href="/css/bootstrap-table.css"/>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.5.0(forms-min.css)"/>
 extra_javascript: |
   <script src="/js/list.min.js"></script>
@@ -15,172 +16,506 @@ extra_javascript: |
   <div class="pure-form">
     <input id="command_search" type="text" class="search pure-input-1 pure-input-rounded" placeholder="Search"/>
   </div>
-  <ul class="list">
-    <li><a class="command" href="/commands/accountstatus">/accountstatus</a></li>
-    <li><a class="command" href="/commands/afk">/afk</a></li>
-    <li><a class="command" href="/commands/assign">/assign</a></li>
-    <li><a class="command" href="/commands/attributes">/attributes</a></li>
-    <li><a class="command" href="/commands/back">/back</a></li>
-    <li><a class="command" href="/commands/backpack">/backpack</a></li>
-    <li><a class="command" href="/commands/ban">/ban</a></li>
-    <li><a class="command" href="/commands/banhistory">/banhistory</a></li>
-    <li><a class="command" href="/commands/baninfo">/baninfo</a></li>
-    <li><a class="command" href="/commands/banip">/banip</a></li>
-    <li><a class="command" href="/commands/banlist">/banlist</a></li>
-    <li><a class="command" href="/commands/biome">/biome</a></li>
-    <li><a class="command" href="/commands/broadcast">/broadcast</a></li>
-    <li><a class="command" href="/commands/buddha">/buddha</a></li>
-    <li><a class="command" href="/commands/burn">/burn</a></li>
-    <li><a class="command" href="/commands/clearinventory">/clearinventory</a></li>
-    <li><a class="command" href="/commands/clearwarns">/clearwarns</a></li>
-    <li><a class="command" href="/commands/compareip">/compareip</a></li>
-    <li><a class="command" href="/commands/compass">/compass</a></li>
-    <li><a class="command" href="/commands/coords">/coords</a></li>
-    <li><a class="command" href="/commands/deafen">/deafen</a></li>
-    <li><a class="command" href="/commands/deletebanhistory">/deletebanhistory</a></li>
-    <li><a class="command" href="/commands/delhome">/delhome</a></li>
-    <li><a class="command" href="/commands/deljail">/deljail</a></li>
-    <li><a class="command" href="/commands/delwarp">/delwarp</a></li>
-    <li><a class="command" href="/commands/dump">/dump</a></li>
-    <li><a class="command" href="/commands/effect">/effect</a></li>
-    <li><a class="command" href="/commands/enchant">/enchant</a></li>
-    <li><a class="command" href="/commands/enchantingtable">/enchantingtable</a></li>
-    <li><a class="command" href="/commands/enderchest">/enderchest</a></li>
-    <li><a class="command" href="/commands/entities">/entities</a></li>
-    <li><a class="command" href="/commands/erase">/erase</a></li>
-    <li><a class="command" href="/commands/explode">/explode</a></li>
-    <li><a class="command" href="/commands/facepalm">/facepalm</a></li>
-    <li><a class="command" href="/commands/fakeop">/fakeop</a></li>
-    <li><a class="command" href="/commands/feed">/feed</a></li>
-    <li><a class="command" href="/commands/findip">/findip</a></li>
-    <li><a class="command" href="/commands/fireball">/fireball</a></li>
-    <li><a class="command" href="/commands/firework">/firework</a></li>
-    <li><a class="command" href="/commands/fixchunk">/fixchunk</a></li>
-    <li><a class="command" href="/commands/fly">/fly</a></li>
-    <li><a class="command" href="/commands/flyspeed">/flyspeed</a></li>
-    <li><a class="command" href="/commands/force">/force</a></li>
-    <li><a class="command" href="/commands/freeze">/freeze</a></li>
-    <li><a class="command" href="/commands/freezetime">/freezetime</a></li>
-    <li><a class="command" href="/commands/furnace">/furnace</a></li>
-    <li><a class="command" href="/commands/gamemode">/gamemode</a></li>
-    <li><a class="command" href="/commands/garbagecollector">/garbagecollector</a></li>
-    <li><a class="command" href="/commands/getid">/getid</a></li>
-    <li><a class="command" href="/commands/getip">/getip</a></li>
-    <li><a class="command" href="/commands/give">/give</a></li>
-    <li><a class="command" href="/commands/god">/god</a></li>
-    <li><a class="command" href="/commands/harm">/harm</a></li>
-    <li><a class="command" href="/commands/head">/head</a></li>
-    <li><a class="command" href="/commands/heal">/heal</a></li>
-    <li><a class="command" href="/commands/helmet">/helmet</a></li>
-    <li><a class="command" href="/commands/help">/help</a></li>
-    <li><a class="command" href="/commands/home">/home</a></li>
-    <li><a class="command" href="/commands/hug">/hug</a></li>
-    <li><a class="command" href="/commands/ignore">/ignore</a></li>
-    <li><a class="command" href="/commands/ingot2block">/ingot2block</a></li>
-    <li><a class="command" href="/commands/invmod">/invmod</a></li>
-    <li><a class="command" href="/commands/invsee">/invsee</a></li>
-    <li><a class="command" href="/commands/item">/item</a></li>
-    <li><a class="command" href="/commands/jail">/jail</a></li>
-    <li><a class="command" href="/commands/jump">/jump</a></li>
-    <li><a class="command" href="/commands/kick">/kick</a></li>
-    <li><a class="command" href="/commands/kickall">/kickall</a></li>
-    <li><a class="command" href="/commands/kill">/kill</a></li>
-    <li><a class="command" href="/commands/killall">/killall</a></li>
-    <li><a class="command" href="/commands/kit">/kit</a></li>
-    <li><a class="command" href="/commands/kits">/kits</a></li>
-    <li><a class="command" href="/commands/lag">/lag</a></li>
-    <li><a class="command" href="/commands/less">/less</a></li>
-    <li><a class="command" href="/commands/level">/level</a></li>
-    <li><a class="command" href="/commands/list">/list</a></li>
-    <li><a class="command" href="/commands/listhome">/listhome</a></li>
-    <li><a class="command" href="/commands/listwarns">/listwarns</a></li>
-    <li><a class="command" href="/commands/loadplayer">/loadplayer</a></li>
-    <li><a class="command" href="/commands/lore">/lore</a></li>
-    <li><a class="command" href="/commands/mail">/mail</a></li>
-    <li><a class="command" href="/commands/map">/map</a></li>
-    <li><a class="command" href="/commands/megastrike">/megastrike</a></li>
-    <li><a class="command" href="/commands/mem">/mem</a></li>
-    <li><a class="command" href="/commands/message">/message</a></li>
-    <li><a class="command" href="/commands/mobignore">/mobignore</a></li>
-    <li><a class="command" href="/commands/monitor">/monitor</a></li>
-    <li><a class="command" href="/commands/more">/more</a></li>
-    <li><a class="command" href="/commands/motd">/motd</a></li>
-    <li><a class="command" href="/commands/mute">/mute</a></li>
-    <li><a class="command" href="/commands/muteall">/muteall</a></li>
-    <li><a class="command" href="/commands/nameentity">/nameentity</a></li>
-    <li><a class="command" href="/commands/near">/near</a></li>
-    <li><a class="command" href="/commands/nick">/nick</a></li>
-    <li><a class="command" href="/commands/onehitkill">/onehitkill</a></li>
-    <li><a class="command" href="/commands/pext">/pext</a></li>
-    <li><a class="command" href="/commands/ping">/ping</a></li>
-    <li><a class="command" href="/commands/playersearch">/playersearch</a></li>
-    <li><a class="command" href="/commands/playertime">/playertime</a></li>
-    <li><a class="command" href="/commands/pluginmanager">/pluginmanager</a></li>
-    <li><a class="command" href="/commands/potion">/potion</a></li>
-    <li><a class="command" href="/commands/publicassign">/publicassign</a></li>
-    <li><a class="command" href="/commands/quit">/quit</a></li>
-    <li><a class="command" href="/commands/ragequit">/ragequit</a></li>
-    <li><a class="command" href="/commands/rank">/rank</a></li>
-    <li><a class="command" href="/commands/rcmds">/rcmds</a></li>
-    <li><a class="command" href="/commands/realname">/realname</a></li>
-    <li><a class="command" href="/commands/recipe">/recipe</a></li>
-    <li><a class="command" href="/commands/rename">/rename</a></li>
-    <li><a class="command" href="/commands/repair">/repair</a></li>
-    <li><a class="command" href="/commands/reply">/reply</a></li>
-    <li><a class="command" href="/commands/ride">/ride</a></li>
-    <li><a class="command" href="/commands/rocket">/rocket</a></li>
-    <li><a class="command" href="/commands/rules">/rules</a></li>
-    <li><a class="command" href="/commands/saveplayer">/saveplayer</a></li>
-    <li><a class="command" href="/commands/sci">/sci</a></li>
-    <li><a class="command" href="/commands/seen">/seen</a></li>
-    <li><a class="command" href="/commands/setarmor">/setarmor</a></li>
-    <li><a class="command" href="/commands/setcharacteristic">/setcharacteristic</a></li>
-    <li><a class="command" href="/commands/sethome">/sethome</a></li>
-    <li><a class="command" href="/commands/setjail">/setjail</a></li>
-    <li><a class="command" href="/commands/setlevel">/setlevel</a></li>
-    <li><a class="command" href="/commands/setspawn">/setspawn</a></li>
-    <li><a class="command" href="/commands/setuserdata">/setuserdata</a></li>
-    <li><a class="command" href="/commands/setwarp">/setwarp</a></li>
-    <li><a class="command" href="/commands/signedit">/signedit</a></li>
-    <li><a class="command" href="/commands/slap">/slap</a></li>
-    <li><a class="command" href="/commands/spawn">/spawn</a></li>
-    <li><a class="command" href="/commands/spawner">/spawner</a></li>
-    <li><a class="command" href="/commands/spawninfo">/spawninfo</a></li>
-    <li><a class="command" href="/commands/spawnmob">/spawnmob</a></li>
-    <li><a class="command" href="/commands/speak">/speak</a></li>
-    <li><a class="command" href="/commands/spy">/spy</a></li>
-    <li><a class="command" href="/commands/starve">/starve</a></li>
-    <li><a class="command" href="/commands/strike">/strike</a></li>
-    <li><a class="command" href="/commands/suicide">/suicide</a></li>
-    <li><a class="command" href="/commands/teleport">/teleport</a></li>
-    <li><a class="command" href="/commands/teleporthere">/teleporthere</a></li>
-    <li><a class="command" href="/commands/teleportrequest">/teleportrequest</a></li>
-    <li><a class="command" href="/commands/teleportrequestcancel">/teleportrequestcancel</a></li>
-    <li><a class="command" href="/commands/teleportrequesthere">/teleportrequesthere</a></li>
-    <li><a class="command" href="/commands/tempban">/tempban</a></li>
-    <li><a class="command" href="/commands/time">/time</a></li>
-    <li><a class="command" href="/commands/tp2p">/tp2p</a></li>
-    <li><a class="command" href="/commands/tpaall">/tpaall</a></li>
-    <li><a class="command" href="/commands/tpaccept">/tpaccept</a></li>
-    <li><a class="command" href="/commands/tpall">/tpall</a></li>
-    <li><a class="command" href="/commands/tpdeny">/tpdeny</a></li>
-    <li><a class="command" href="/commands/tppos">/tppos</a></li>
-    <li><a class="command" href="/commands/tptoggle">/tptoggle</a></li>
-    <li><a class="command" href="/commands/trade">/trade</a></li>
-    <li><a class="command" href="/commands/unban">/unban</a></li>
-    <li><a class="command" href="/commands/unbanip">/unbanip</a></li>
-    <li><a class="command" href="/commands/usage">/usage</a></li>
-    <li><a class="command" href="/commands/vip">/vip</a></li>
-    <li><a class="command" href="/commands/vtp">/vtp</a></li>
-    <li><a class="command" href="/commands/vtphere">/vtphere</a></li>
-    <li><a class="command" href="/commands/walkspeed">/walkspeed</a></li>
-    <li><a class="command" href="/commands/warn">/warn</a></li>
-    <li><a class="command" href="/commands/warp">/warp</a></li>
-    <li><a class="command" href="/commands/weather">/weather</a></li>
-    <li><a class="command" href="/commands/whois">/whois</a></li>
-    <li><a class="command" href="/commands/wl">/wl</a></li>
-    <li><a class="command" href="/commands/workbench">/workbench</a></li>
-    <li><a class="command" href="/commands/world">/world</a></li>
-    <li><a class="command" href="/commands/worldmanager">/worldmanager</a></li>
-  </ul>
+  <table class="table">
+    <tbody class="list">
+      <tr>
+        <td><a class="command" href="/commands/accountstatus">/accountstatus</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/afk">/afk</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/assign">/assign</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/attributes">/attributes</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/back">/back</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/backpack">/backpack</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/ban">/ban</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/banhistory">/banhistory</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/baninfo">/baninfo</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/banip">/banip</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/banlist">/banlist</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/biome">/biome</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/broadcast">/broadcast</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/buddha">/buddha</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/burn">/burn</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/clearinventory">/clearinventory</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/clearwarns">/clearwarns</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/compareip">/compareip</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/compass">/compass</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/coords">/coords</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/deafen">/deafen</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/deletebanhistory">/deletebanhistory</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/delhome">/delhome</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/deljail">/deljail</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/delwarp">/delwarp</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/dump">/dump</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/effect">/effect</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/enchant">/enchant</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/enchantingtable">/enchantingtable</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/enderchest">/enderchest</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/entities">/entities</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/erase">/erase</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/explode">/explode</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/facepalm">/facepalm</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/fakeop">/fakeop</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/feed">/feed</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/findip">/findip</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/fireball">/fireball</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/firework">/firework</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/fixchunk">/fixchunk</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/fly">/fly</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/flyspeed">/flyspeed</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/force">/force</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/freeze">/freeze</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/freezetime">/freezetime</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/furnace">/furnace</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/gamemode">/gamemode</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/garbagecollector">/garbagecollector</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/getid">/getid</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/getip">/getip</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/give">/give</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/god">/god</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/harm">/harm</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/head">/head</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/heal">/heal</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/helmet">/helmet</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/help">/help</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/home">/home</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/hug">/hug</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/ignore">/ignore</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/ingot2block">/ingot2block</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/invmod">/invmod</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/invsee">/invsee</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/item">/item</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/jail">/jail</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/jump">/jump</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/kick">/kick</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/kickall">/kickall</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/kill">/kill</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/killall">/killall</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/kit">/kit</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/kits">/kits</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/lag">/lag</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/less">/less</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/level">/level</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/list">/list</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/listhome">/listhome</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/listwarns">/listwarns</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/loadplayer">/loadplayer</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/lore">/lore</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/mail">/mail</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/map">/map</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/megastrike">/megastrike</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/mem">/mem</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/message">/message</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/mobignore">/mobignore</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/monitor">/monitor</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/more">/more</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/motd">/motd</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/mute">/mute</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/muteall">/muteall</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/nameentity">/nameentity</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/near">/near</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/nick">/nick</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/onehitkill">/onehitkill</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/pext">/pext</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/ping">/ping</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/playersearch">/playersearch</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/playertime">/playertime</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/pluginmanager">/pluginmanager</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/potion">/potion</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/publicassign">/publicassign</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/quit">/quit</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/ragequit">/ragequit</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/rank">/rank</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/rcmds">/rcmds</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/realname">/realname</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/recipe">/recipe</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/rename">/rename</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/repair">/repair</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/reply">/reply</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/ride">/ride</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/rocket">/rocket</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/rules">/rules</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/saveplayer">/saveplayer</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/sci">/sci</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/seen">/seen</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/setarmor">/setarmor</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/setcharacteristic">/setcharacteristic</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/sethome">/sethome</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/setjail">/setjail</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/setlevel">/setlevel</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/setspawn">/setspawn</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/setuserdata">/setuserdata</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/setwarp">/setwarp</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/signedit">/signedit</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/slap">/slap</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/spawn">/spawn</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/spawner">/spawner</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/spawninfo">/spawninfo</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/spawnmob">/spawnmob</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/speak">/speak</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/spy">/spy</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/starve">/starve</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/strike">/strike</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/suicide">/suicide</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/teleport">/teleport</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/teleporthere">/teleporthere</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/teleportrequest">/teleportrequest</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/teleportrequestcancel">/teleportrequestcancel</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/teleportrequesthere">/teleportrequesthere</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tempban">/tempban</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/time">/time</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tp2p">/tp2p</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tpaall">/tpaall</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tpaccept">/tpaccept</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tpall">/tpall</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tpdeny">/tpdeny</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tppos">/tppos</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/tptoggle">/tptoggle</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/trade">/trade</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/unban">/unban</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/unbanip">/unbanip</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/usage">/usage</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/vip">/vip</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/vtp">/vtp</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/vtphere">/vtphere</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/walkspeed">/walkspeed</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/warn">/warn</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/warp">/warp</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/weather">/weather</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/whois">/whois</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/wl">/wl</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/workbench">/workbench</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/world">/world</a></td>
+      </tr>
+      <tr>
+        <td><a class="command" href="/commands/worldmanager">/worldmanager</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
