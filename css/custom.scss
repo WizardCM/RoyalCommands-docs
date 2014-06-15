@@ -23,6 +23,22 @@ a {
   &:hover, &:focus { text-decoration: underline; }
 }
 
+code {
+  font-family: "Inconsolata", monospace;
+  background-color: darken($background, 25%);
+  border: 1px solid $accent;
+  font-size: .9em;
+}
+
+ul, ol {
+  &.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &.nostyle { list-style: none; }
+}
+
 .l-box { padding: 1em; }
 
 .home-menu {
@@ -53,14 +69,6 @@ a {
    border-bottom: 1px solid $accent;
    padding-bottom: 2px;
  }
-
-ul, ol {
-  &.unstyled {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-}
 
 .text {
   &-muted {

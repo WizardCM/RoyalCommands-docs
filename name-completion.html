@@ -1,0 +1,38 @@
+---
+layout: titled
+title: Online Name-Completion
+extra_css: |
+  <link rel="stylesheet" href="/css/bootstrap-table.css"/>
+---
+<p>
+  If a component of RoyalCommands states that it supports <em>online name-completion</em>, then it will allow for a name
+  argument to be partially completed when entered; the name will complete itself if a player matching it is online.
+</p>
+<h3>Examples</h3>
+<p>
+The following people are online:
+</p>
+<table class="table">
+  <tr>
+    <td>Notch</td>
+    <td>jeb_</td>
+    <td>deadmau5</td>
+  </tr>
+  <tr>
+    <td>jkcclemens</td>
+    <td>WizardCM</td>
+    <td>Honeydew</td>
+  </tr>
+  <tr>
+    <td>Xephos</td>
+    <td>Dinnerbone</td>
+    <td>EvilSeph</td>
+  </tr>
+</table>
+<code>/tp d</code> - Will complete to either <code>deadmau5</code> or <code>Dinnerbone</code>, most likely depending on login order.
+<code>/tp di</code> - Will complete to <code>Dinnerbone</code>.
+<code>/tp de</code> - Will complete to <code>deadmau5</code>.
+<code>/tp j</code> - Will complete to either <code>jeb_</code> or <code>jkcclemens</code>, yet again depending on login order.
+<code>/tp jk</code> - Will complete to <code>jkcclemens</code>.
+<code>/tp je</code> - Will complete to <code>jeb_</code>.
+<code>/tp jeb_</code> - Will not complete (already a full name).
