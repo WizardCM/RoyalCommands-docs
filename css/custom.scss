@@ -29,7 +29,7 @@ code {
   border: 1px solid $accent;
   font-size: .9em;
   padding: 2px;
-  line-height: $line-height-base + 2;
+  line-height: $line-height-base + 6; // 2 top and bottom plus 1 extra for top and bottom
   white-space: nowrap;
 }
 
