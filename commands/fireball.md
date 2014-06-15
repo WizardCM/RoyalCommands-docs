@@ -4,7 +4,7 @@ command:
   aliases:
   - fb
   configuration: []
-  description: Launches a fireball out of you.
+  description: Launches a fireball towards where you are looking.
   permissions:
   - rcmds.fireball
   supports:
