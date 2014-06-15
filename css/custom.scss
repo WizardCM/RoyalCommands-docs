@@ -40,7 +40,10 @@ ul, ol {
     margin: 0;
     padding: 0;
   }
-  &.nostyle { list-style: none; }
+  &.nostyle {
+    list-style: none;
+    margin: 0;
+  }
 }
 
 .l-box { padding: 1em; }
