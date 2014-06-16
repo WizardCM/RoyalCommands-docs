@@ -33,20 +33,32 @@ extra_css: |
     </ul>
   </dd>
   {% endunless %}
+  {% unless page.command.added == "" %}
+  <dt>Version Added</dt>
+  <dd>{{ page.command.added }}</dd>
+  {% endunless %}
 </dl>
 <h3>In Depth</h3>
 {{ content }}
 <div class="text-muted">
-{% if page.command.supports.name-completion %}
-  <p><small>This command supports <a href="/name-completion">online name-completion</a>.</small></p>
-{% endif %}
-{% if page.command.supports.time-format %}
-  <p><small>This command supports <a href="/formats/time-format">time format</a>.</small></p>
-{% endif %}
-{% if page.command.supports.firework-format %}
-  <p><small>This command supports <a href="/formats/firework-format">firework format</a>.</small></p>
-{% endif %}
-{% if page.command.supports.home-format %}
-  <p><small>This command supports <a href="/formats/home-format">home format</a>.</small></p>
-{% endif %}
+  {% if page.command.supports.name-completion %}
+  <p>
+    <small>This command supports <a href="/name-completion">online name-completion</a>.</small>
+  </p>
+  {% endif %}
+  {% if page.command.supports.time-format %}
+  <p>
+    <small>This command supports <a href="/formats/time-format">time format</a>.</small>
+  </p>
+  {% endif %}
+  {% if page.command.supports.firework-format %}
+  <p>
+    <small>This command supports <a href="/formats/firework-format">firework format</a>.</small>
+  </p>
+  {% endif %}
+  {% if page.command.supports.home-format %}
+  <p>
+    <small>This command supports <a href="/formats/home-format">home format</a>.</small>
+  </p>
+  {% endif %}
 </div>
