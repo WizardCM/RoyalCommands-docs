@@ -12,7 +12,7 @@ def download():
     try:
         data = load(r.text)
     except Exception as e:
-        print("Could not parse plugin.yml: %s" % e)
+        print("Could not parse plugin.yml: {}".format(e))
 
 def generate_index():
     if not exists("commands.html"):
@@ -23,10 +23,10 @@ def generate_index():
         front_matter = "---".join(index.split("---")[:2]) + "---\n"
     index = """<div id="command_list">\n  <div class="pure-form">\n    <input id="command_search" type="text" class="search pure-input-1 pure-input-rounded" placeholder="Search"/>\n  </div>\n  <table class="table">\n    <thead>\n      <tr>\n        <th>Command</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody class="list">\n"""
     for command in sorted(data["reflectcommands"]):
-        index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/%s\">/%s</a></td>\n        <td>%s</td>\n      </tr>\n" % (command, command, data["reflectcommands"][command]["description"])
+        index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/{0}\">/{0}</a></td>\n        <td>{1}</td>\n      </tr>\n".format(command, data["reflectcommands"][command]["description"])
     index += "    </tbody>\n  </table>\n</div>\n"
     f = open("commands.html", "w")
-    f.write("%s%s" % (front_matter, index))
+    f.write("{}{}".format(front_matter, index))
     f.flush()
     f.close()
 
@@ -38,8 +38,8 @@ def generate_files():
     for command in commands:
         command_data = commands[command]
         old_data = None
-        if exists("commands/%s.md" % command):
-            old_data = open("commands/%s.md" % command).read()
+        if exists("commands/{}.md".format(command)):
+            old_data = open("commands/{}.md".format(command)).read()
             front_matter = load(old_data.split("---")[1])
         else:
             front_matter = {}
@@ -49,14 +49,14 @@ def generate_files():
         if "aliases" in command_data: fm_command["aliases"] = command_data["aliases"]
         fm_command["usage"] = command_data["usage"].replace("<command>", command)
         if "configuration" not in fm_command: fm_command["configuration"] = []
-        if "permissions" not in fm_command or len(fm_command["permissions"]) < 1: fm_command["permissions"] = ["rcmds.%s" % command]
+        if "permissions" not in fm_command or len(fm_command["permissions"]) < 1: fm_command["permissions"] = ["rcmds.{}".format(command)]
         supports = fm_command["supports"] if "supports" in fm_command else {}
         fm_command["supports"] = supports
         front_matter["command"] = fm_command
         front_matter["layout"] = "command"
-        front_matter["title"] = "/%s" % command
-        content = "---\n%s---%s" % (dump(front_matter, default_flow_style=False), old_data.split("---")[2] if old_data is not None else "")
-        f = open("commands/%s.md" % command, "w")
+        front_matter["title"] = "/{}".format(command)
+        content = "---\n{}---{}".format(dump(front_matter, default_flow_style=False), old_data.split("---")[2] if old_data is not None else "")
+        f = open("commands/{}.md".format(command), "w")
         f.write(content)
         f.flush()
         f.close()
