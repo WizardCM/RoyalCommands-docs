@@ -38,7 +38,7 @@ def generate_index():
         index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/{0}\">/{0}</a></td>\n        <td>{1}</td>".format(command, command_data["description"])
         if "aliases" in command_data:
             for alias in command_data["aliases"]:
-                index += "\n        <td class=\"hidden\"><span class=\"alias\">/{}</span></td>".format(alias)
+                index += "\n        <td class=\"hidden alias\">/{}</td>".format(alias)
         index += "\n      </tr>\n"
 
     index += "    </tbody>\n  </table>\n</div>\n"
