@@ -32,14 +32,13 @@ def generate_index():
         f = open("commands.html")
         index = f.read()
         front_matter = "---".join(index.split("---")[:2]) + "---\n"
-    index = """<div id="command_list">\n  <div class="pure-form">\n    <input id="command_search" type="text" class="search pure-input-1 pure-input-rounded" placeholder="Search"/>\n  </div>\n  <table class="table">\n    <thead>\n      <tr>\n        <th>Command</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody class="list">\n"""
+    index = """<div id="command_list">\n  <div class="pure-form">\n    <input id="command_search" type="text" class="search pure-input-1 pure-input-rounded" placeholder="Search"/>\n  </div>\n  <table class="table">\n    <thead>\n      <tr>\n        <th>Command</th>\n        <th>Description</th>\n        <th class=\"hidden\">Aliases</th>\n      </tr>\n    </thead>\n    <tbody class="list">\n"""
     for command in sorted(data["reflectcommands"]):
         command_data = data["reflectcommands"][command]
         index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/{0}\">/{0}</a></td>\n        <td>{1}</td>".format(command, command_data["description"])
         if "aliases" in command_data:
             index += "\n        <td class=\"hidden alias\">{}</td>".format("/" + " /".join(command_data["aliases"]))
         index += "\n      </tr>\n"
-
     index += "    </tbody>\n  </table>\n</div>\n"
     f = open("commands.html", "w")
     f.write("{}{}".format(front_matter, index))
