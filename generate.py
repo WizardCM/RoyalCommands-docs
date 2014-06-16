@@ -10,8 +10,9 @@ data = None
 
 def create_good_dir():
     name = "new_commands"
-    i = 1
+    i = 0
     while exists(name):
+        i += 1
         name = "new_commands{}".format(i)
     makedirs(name)
     return name
