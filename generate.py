@@ -37,8 +37,7 @@ def generate_index():
         command_data = data["reflectcommands"][command]
         index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/{0}\">/{0}</a></td>\n        <td>{1}</td>".format(command, command_data["description"])
         if "aliases" in command_data:
-            for alias in command_data["aliases"]:
-                index += "\n        <td class=\"hidden alias\">/{}</td>".format(alias)
+            index += "\n        <td class=\"hidden alias\">{}</td>".format("/" + " /".join(command_data["aliases"]))
         index += "\n      </tr>\n"
 
     index += "    </tbody>\n  </table>\n</div>\n"
