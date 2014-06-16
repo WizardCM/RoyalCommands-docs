@@ -34,7 +34,13 @@ def generate_index():
         front_matter = "---".join(index.split("---")[:2]) + "---\n"
     index = """<div id="command_list">\n  <div class="pure-form">\n    <input id="command_search" type="text" class="search pure-input-1 pure-input-rounded" placeholder="Search"/>\n  </div>\n  <table class="table">\n    <thead>\n      <tr>\n        <th>Command</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody class="list">\n"""
     for command in sorted(data["reflectcommands"]):
-        index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/{0}\">/{0}</a></td>\n        <td>{1}</td>\n      </tr>\n".format(command, data["reflectcommands"][command]["description"])
+        command_data = data["reflectcommands"][command]
+        index += "      <tr>\n        <td><a class=\"command\" href=\"/commands/{0}\">/{0}</a></td>\n        <td>{1}</td>".format(command, command_data["description"])
+        if "aliases" in command_data:
+            for alias in command_data["aliases"]:
+                index += "\n        <td class=\"hidden\"><span class=\"alias\">/{}</span></td>".format(alias)
+        index += "\n      </tr>\n"
+
     index += "    </tbody>\n  </table>\n</div>\n"
     f = open("commands.html", "w")
     f.write("{}{}".format(front_matter, index))
