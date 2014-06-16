@@ -1,10 +1,20 @@
+from os import makedirs
 from os.path import exists
+from shutil import move, rmtree
 
 from requests import get
 from yaml import load, dump
 
 r = None
 data = None
+
+def create_good_dir():
+    name = "new_commands"
+    i = 1
+    while exists(name):
+        name = "new_commands{}".format(i)
+    makedirs(name)
+    return name
 
 def download():
     global r, data
@@ -35,6 +45,7 @@ def generate_files():
         print("Could not download plugin.yml")
         return
     commands = data["reflectcommands"]
+    new_dir_name = create_good_dir()
     for command in commands:
         command_data = commands[command]
         old_data = None
@@ -56,10 +67,12 @@ def generate_files():
         front_matter["layout"] = "command"
         front_matter["title"] = "/{}".format(command)
         content = "---\n{}---{}".format(dump(front_matter, default_flow_style=False), old_data.split("---")[2] if old_data is not None else "")
-        f = open("commands/{}.md".format(command), "w")
+        f = open("{}/{}.md".format(new_dir_name, command), "w")
         f.write(content)
         f.flush()
         f.close()
+    rmtree("commands")
+    move(new_dir_name, "commands")
 
 if __name__ == "__main__":
     download()
