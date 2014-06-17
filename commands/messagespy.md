@@ -9,6 +9,8 @@ command:
   description: Allows the player to spy on private messages.
   permissions:
   - rcmds.messagespy
+  - rcmds.others.messagespy
+  - rcmds.exempt.messagespy
   supports:
     name-completion: true
   usage: /messagespy (player)
