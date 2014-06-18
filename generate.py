@@ -45,7 +45,17 @@ def generate_index():
     f.flush()
     f.close()
 
+def get_permissions_for_command(command):
+    global r, data
+    perms = []
+    for permission in data["permissions"]:
+        perm_data = data["permissions"][permission]
+        if "command" not in perm_data or perm_data["command"].lower() != command.lower(): continue
+        perms.append(permission)
+    return perms
+
 def generate_files():
+    global r, data
     if r is None:
         print("Could not download plugin.yml")
         return
@@ -65,7 +75,8 @@ def generate_files():
         if "aliases" in command_data: fm_command["aliases"] = command_data["aliases"]
         fm_command["usage"] = command_data["usage"].replace("<command>", command)
         if "configuration" not in fm_command: fm_command["configuration"] = []
-        if "permissions" not in fm_command or len(fm_command["permissions"]) < 1: fm_command["permissions"] = ["rcmds.{}".format(command)]
+        if "permissions" not in fm_command or len(fm_command["permissions"]) < 1: fm_command["permissions"] = get_permissions_for_command(command)
+        else: fm_command["permissions"] += list(set(get_permissions_for_command(command)) - set(fm_command["permissions"]))
         supports = fm_command["supports"] if "supports" in fm_command else {}
         fm_command["supports"] = supports
         front_matter["command"] = fm_command
