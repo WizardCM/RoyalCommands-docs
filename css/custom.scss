@@ -74,7 +74,7 @@ ul, ol {
 
 .pure-form {
   input[type="text"] {
-    &:focus { border-color: lighten($menu-bg, 25%); !important; }
+    &:focus { border-color: lighten($menu-bg, 25%) !important; }
     transition: border .25s;
   }
 }
