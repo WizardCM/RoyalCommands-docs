@@ -74,7 +74,10 @@ ul, ol {
 }
 
 .pure-form {
-  input[type="text"]:focus { border-color: $accent !important; }
+  input[type="text"] {
+    &:focus { border-color: $accent !important; }
+    transition: border .25s;
+  }
 }
 
 .page-header {
