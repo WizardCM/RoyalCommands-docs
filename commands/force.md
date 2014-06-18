@@ -8,6 +8,7 @@ command:
   description: Forces a player to run a command.
   permissions:
   - rcmds.force
+  - rcmds.exempt.force
   supports:
     name-completion: false
     time-format: false

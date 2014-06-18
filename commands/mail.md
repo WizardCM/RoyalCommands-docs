@@ -6,6 +6,7 @@ command:
   description: Manages player mail.
   permissions:
   - rcmds.mail
+  - rcmds.mail.send
   supports:
     name-completion: false
     time-format: false

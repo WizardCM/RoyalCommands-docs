@@ -8,6 +8,7 @@ command:
   description: Explodes where the player is looking or the specified player.
   permissions:
   - rcmds.explode
+  - rcmds.exempt.explode
   supports:
     name-completion: false
     time-format: false

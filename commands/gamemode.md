@@ -9,6 +9,7 @@ command:
   description: Toggles your gamemode.
   permissions:
   - rcmds.gamemode
+  - rcmds.exempt.gamemode
   supports:
     name-completion: false
     time-format: false

@@ -6,6 +6,7 @@ command:
   description: Toggles creative flymode for yourself or a player
   permissions:
   - rcmds.fly
+  - rcmds.others.fly
   supports:
     name-completion: false
     time-format: false

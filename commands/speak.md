@@ -6,6 +6,7 @@ command:
   description: Makes another player talk.
   permissions:
   - rcmds.speak
+  - rcmds.exempt.speak
   supports:
     name-completion: false
     time-format: false

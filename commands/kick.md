@@ -7,6 +7,7 @@ command:
   description: Kicks a player from the server.
   permissions:
   - rcmds.kick
+  - rcmds.exempt.kick
   supports:
     name-completion: false
     time-format: false

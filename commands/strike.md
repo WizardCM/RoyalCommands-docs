@@ -8,6 +8,8 @@ command:
   description: Strikes lightning at the player's cursor or at specified player.
   permissions:
   - rcmds.strike
+  - rcmds.exempt.strike
+  - rcmds.others.strike
   supports:
     name-completion: false
     time-format: false

@@ -7,6 +7,7 @@ command:
   description: Lowers a player's hunger.
   permissions:
   - rcmds.starve
+  - rcmds.exempt.starve
   supports:
     name-completion: false
     time-format: false

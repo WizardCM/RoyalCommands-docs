@@ -13,6 +13,7 @@ command:
   description: Lists the players online and the maximum amount.
   permissions:
   - rcmds.list
+  - rcmds.seehidden
   supports:
     name-completion: false
     time-format: false

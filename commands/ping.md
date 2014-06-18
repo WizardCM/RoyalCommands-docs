@@ -7,6 +7,7 @@ command:
   description: Pings the server.
   permissions:
   - rcmds.ping
+  - rcmds.others.ping
   supports:
     name-completion: false
     time-format: false

@@ -8,6 +8,7 @@ command:
   description: Freezes the player.
   permissions:
   - rcmds.freeze
+  - rcmds.exempt.freeze
   supports:
     name-completion: false
     time-format: false

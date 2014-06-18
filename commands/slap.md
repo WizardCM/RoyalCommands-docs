@@ -6,6 +6,7 @@ command:
   description: Broadcasts you slapping another player.
   permissions:
   - rcmds.slap
+  - rcmds.exempt.slap
   supports:
     name-completion: false
     time-format: false

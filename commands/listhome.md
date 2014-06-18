@@ -11,6 +11,8 @@ command:
   description: Lists your set homes.
   permissions:
   - rcmds.listhome
+  - rcmds.exempt.listhome
+  - rcmds.others.listhome
   supports:
     name-completion: false
     time-format: false

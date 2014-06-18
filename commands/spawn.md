@@ -6,6 +6,7 @@ command:
   description: Takes the player to the spawn of the world they are standing in.
   permissions:
   - rcmds.spawn
+  - rcmds.spawn.other
   supports:
     name-completion: false
     time-format: false

@@ -7,6 +7,8 @@ command:
   description: Sets a head to a player's skin.
   permissions:
   - rcmds.head
+  - rcmds.exempt.head
+  - rcmds.others.head
   supports:
     name-completion: false
     time-format: false

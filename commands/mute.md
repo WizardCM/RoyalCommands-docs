@@ -7,6 +7,7 @@ command:
   description: Stops a user from speaking.
   permissions:
   - rcmds.mute
+  - rcmds.exempt.mute
   supports:
     name-completion: false
     time-format: false

@@ -6,6 +6,7 @@ command:
   description: Launches the player vertically.
   permissions:
   - rcmds.rocket
+  - rcmds.exempt.rocket
   supports:
     name-completion: false
     time-format: false

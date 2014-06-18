@@ -6,6 +6,7 @@ command:
   description: Warns the specified player.
   permissions:
   - rcmds.warn
+  - rcmds.exempt.warn
   supports:
     name-completion: false
     time-format: false

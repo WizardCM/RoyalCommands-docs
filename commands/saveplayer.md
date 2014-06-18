@@ -7,6 +7,7 @@ command:
   description: Saves an individual player's data.
   permissions:
   - rcmds.saveplayer
+  - rcmds.others.saveplayer
   supports: {}
   usage: /saveplayer [player]
 layout: command

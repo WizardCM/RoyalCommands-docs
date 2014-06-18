@@ -8,6 +8,7 @@ command:
   description: Toggles teleportation.
   permissions:
   - rcmds.teleporttoggle
+  - rcmds.tpoverride
   supports: {}
   usage: /teleporttoggle
 layout: command

@@ -7,6 +7,7 @@ command:
   description: Watch another player.
   permissions:
   - rcmds.monitor
+  - rcmds.exempt.monitor
   supports:
     name-completion: false
     time-format: false

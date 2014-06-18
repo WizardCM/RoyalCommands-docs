@@ -9,6 +9,7 @@ command:
   description: Broadcasts your facepalm.
   permissions:
   - rcmds.facepalm
+  - rcmds.exempt.facepalm
   supports:
     name-completion: false
     time-format: false

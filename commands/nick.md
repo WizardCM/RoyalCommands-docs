@@ -8,6 +8,11 @@ command:
   description: Sets the display name of a player.
   permissions:
   - rcmds.nick
+  - rcmds.exempt.nickspecialcharacters
+  - rcmds.nick.color
+  - rcmds.exempt.nickchangelimit
+  - rcmds.exempt.nick
+  - rcmds.others.nick
   supports:
     name-completion: false
     time-format: false

@@ -9,6 +9,7 @@ command:
   description: Shows the ender chest of a player.
   permissions:
   - rcmds.enderchest
+  - rcmds.exempt.enderchest
   supports:
     name-completion: false
     time-format: false

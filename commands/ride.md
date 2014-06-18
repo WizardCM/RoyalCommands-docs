@@ -8,6 +8,7 @@ command:
   description: Mounts the player on another player.
   permissions:
   - rcmds.ride
+  - rcmds.exempt.ride
   supports:
     name-completion: false
     time-format: false

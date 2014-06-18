@@ -8,6 +8,7 @@ command:
   description: Toggles godmode on a player or the player himself.
   permissions:
   - rcmds.god
+  - rcmds.others.god
   supports:
     name-completion: false
     time-format: false

@@ -7,6 +7,7 @@ command:
   description: Ignores when a player chats.
   permissions:
   - rcmds.ignore
+  - rcmds.exempt.ignore
   supports:
     name-completion: false
     time-format: false

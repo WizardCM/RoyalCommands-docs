@@ -6,6 +6,7 @@ command:
   description: Selectively removes items from a player's inventory.
   permissions:
   - rcmds.sci
+  - rcmds.exempt.sci
   supports:
     name-completion: false
     time-format: false

@@ -8,6 +8,7 @@ command:
   description: Ragequits yourself or another player.
   permissions:
   - rcmds.ragequit
+  - rcmds.exempt.ragequit
   supports:
     name-completion: false
     time-format: false

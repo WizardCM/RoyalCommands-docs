@@ -6,6 +6,7 @@ command:
   description: Harms a player.
   permissions:
   - rcmds.harm
+  - rcmds.exempt.harm
   supports:
     name-completion: false
     time-format: false

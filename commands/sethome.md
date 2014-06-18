@@ -8,6 +8,7 @@ command:
   description: Sets the player's home.
   permissions:
   - rcmds.sethome
+  - rcmds.sethome.multi
   supports:
     name-completion: false
     time-format: false

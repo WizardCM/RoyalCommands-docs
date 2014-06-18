@@ -12,6 +12,7 @@ command:
   description: Lists the warnings a player has.
   permissions:
   - rcmds.listwarns
+  - rcmds.others.listwarns
   supports:
     name-completion: false
     time-format: false

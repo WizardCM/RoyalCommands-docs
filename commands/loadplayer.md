@@ -7,6 +7,7 @@ command:
   description: Loads an individual player's data.
   permissions:
   - rcmds.loadplayer
+  - rcmds.others.loadplayer
   supports: {}
   usage: /loadplayer [player]
 layout: command

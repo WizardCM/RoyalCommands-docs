@@ -10,6 +10,7 @@ command:
   description: Strikes lightning 15 times at the player's cursor or at specified player.
   permissions:
   - rcmds.megastrike
+  - rcmds.others.megastrike
   supports:
     name-completion: false
     time-format: false

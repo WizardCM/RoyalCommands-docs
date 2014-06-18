@@ -9,6 +9,7 @@ command:
   description: Extinguishes yourself or a player.
   permissions:
   - rcmds.pext
+  - rcmds.others.pext
   supports:
     name-completion: false
     time-format: false

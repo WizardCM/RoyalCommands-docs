@@ -7,6 +7,7 @@ command:
   description: Modifies other players' inventories.
   permissions:
   - rcmds.invmod
+  - rcmds.exempt.invmod
   supports:
     name-completion: false
     time-format: false
