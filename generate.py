@@ -8,12 +8,12 @@ from yaml import load, dump
 r = None
 data = None
 
-def create_good_dir():
-    name = "new_commands"
+def create_good_dir(name):
+    orig_name = name
     i = 0
     while exists(name):
         i += 1
-        name = "new_commands{}".format(i)
+        name = "{}{}".format(orig_name, i)
     makedirs(name)
     return name
 
@@ -25,9 +25,35 @@ def download():
     except Exception as e:
         print("Could not parse plugin.yml: {}".format(e))
 
-def generate_index():
+def get_default_text(default):
+    text = "Unknown"
+    if type(default) == bool and not default: text = "No one"
+    elif type(default) == bool and default: text = "Everyone"
+    elif type(default) == str and default == "op": text = "Ops"
+    return text
+
+def generate_permission_index():
+    if not exists("permissions.html"):
+        front_matter = """---\nlayout: titled\ntitle: Permissions\nextra_css: |\n  <link rel="stylesheet" href="/css/bootstrap-table.css"/>\n  <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.5.0(forms-min.css)"/>\n  <style>table { margin-top: 10px; }</style>\nextra_javascript: |\n  <script src="/js/list.min.js"></script>\n  <script>new List("permission_list", { valueNames: ["permission", "description", "default", "command"] });</script>\n---"""
+    else:
+        f = open("permissions.html")
+        index = f.read()
+        front_matter = "---".join(index.split("---")[:2]) + "---\n"
+    index = """<div id="permission_list">\n  <div class="pure-form">\n    <input id="permission_search" type="text" class="search pure-input-1 pure-input-rounded" placeholder="Search"/>\n  </div>\n  <table class="table">\n    <thead>\n      <tr>\n        <th>Permission</th>\n        <th>Description</th>\n        <th>Default</th>\n        <th>Command</th>\n      </tr>\n    </thead>\n    <tbody class="list">\n"""
+    for permission in sorted(data["permissions"]):
+        permission_data = data["permissions"][permission]
+        default = get_default_text(permission_data["default"]) if "default" in permission_data else "Unknown"
+        command = '<a class="command" href="/commands/{0}">/{0}</a>'.format(permission_data["command"]) if "command" in permission_data else "N/A"
+        index += "      <tr>\n        <td class=\"permission\">{0}</td>\n        <td class=\"description\">{1}</td>\n        <td class=\"default\">{2}</td>\n        <td>{3}</td>\n      </tr>\n".format(permission, permission_data["description"], default, command)
+    index += "    </tbody>\n  </table>\n</div>\n"
+    f = open("permissions.html", "w")
+    f.write("{}{}".format(front_matter, index))
+    f.flush()
+    f.close()
+
+def generate_command_index():
     if not exists("commands.html"):
-        front_matter = """---\nlayout: titled\ntitle: Commands\nextra_css: |\n  <link rel="stylesheet" href="/css/bootstrap-table.css"/>\n  <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.5.0(forms-min.css)"/>\n  <style>table { margin-top: 10px; }</style>\nextra_javascript: |\n  <script src="/js/list.min.js"></script>\n  <script>new List("command_list", { valueNames: ["command"] });</script>\n---"""
+        front_matter = """---\nlayout: titled\ntitle: Commands\nextra_css: |\n  <link rel="stylesheet" href="/css/bootstrap-table.css"/>\n  <link rel="stylesheet" href="//cdn.jsdelivr.net/g/pure@0.5.0(forms-min.css)"/>\n  <style>table { margin-top: 10px; }</style>\nextra_javascript: |\n  <script src="/js/list.min.js"></script>\n  <script>new List("command_list", { valueNames: ["command", "alias"] });</script>\n---"""
     else:
         f = open("commands.html")
         index = f.read()
@@ -54,13 +80,13 @@ def get_permissions_for_command(command):
         perms.append(permission)
     return perms
 
-def generate_files():
+def generate_command_files():
     global r, data
     if r is None:
         print("Could not download plugin.yml")
         return
     commands = data["reflectcommands"]
-    new_dir_name = create_good_dir()
+    new_dir_name = create_good_dir("new_commands")
     for command in commands:
         command_data = commands[command]
         old_data = None
@@ -93,5 +119,6 @@ def generate_files():
 
 if __name__ == "__main__":
     download()
-    generate_files()
-    generate_index()
+    generate_command_files()
+    generate_command_index()
+    generate_permission_index()
