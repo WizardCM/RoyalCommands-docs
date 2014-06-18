@@ -9,8 +9,8 @@ command:
   description: Marks the player as away from keyboard.
   permissions:
   - rcmds.afk
-  - rcmds.exempt.autoafk
   - rcmds.exempt.afkkick
+  - rcmds.exempt.autoafk
   supports:
     name-completion: false
     time-format: false

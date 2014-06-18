@@ -8,8 +8,8 @@ command:
   description: Views the kick history of the player.
   permissions:
   - rcmds.kickhistory
-  - rcmds.others.kickhistory
   - rcmds.exempt.kickhistory
+  - rcmds.others.kickhistory
   supports:
     name-completion: true
   usage: /kickhistory (player)

@@ -8,22 +8,22 @@ command:
   permissions:
   - rcmds.pluginmanager
   - rcmds.pluginmanager.*
-  - rcmds.pluginmanager.findtag
-  - rcmds.pluginmanager.updatecheckall
-  - rcmds.pluginmanager.download
-  - rcmds.pluginmanager.list
-  - rcmds.pluginmanager.disable
-  - rcmds.pluginmanager.enable
-  - rcmds.pluginmanager.downloadlink
-  - rcmds.pluginmanager.unload
-  - rcmds.pluginmanager.reload
-  - rcmds.pluginmanager.load
-  - rcmds.pluginmanager.help
   - rcmds.pluginmanager.delete
+  - rcmds.pluginmanager.disable
+  - rcmds.pluginmanager.download
+  - rcmds.pluginmanager.downloadlink
+  - rcmds.pluginmanager.enable
+  - rcmds.pluginmanager.findtag
+  - rcmds.pluginmanager.help
+  - rcmds.pluginmanager.info
+  - rcmds.pluginmanager.list
+  - rcmds.pluginmanager.load
+  - rcmds.pluginmanager.reload
   - rcmds.pluginmanager.reloadall
+  - rcmds.pluginmanager.unload
   - rcmds.pluginmanager.update
   - rcmds.pluginmanager.updatecheck
-  - rcmds.pluginmanager.info
+  - rcmds.pluginmanager.updatecheckall
   supports:
     name-completion: false
     time-format: false

@@ -8,14 +8,14 @@ command:
   description: Sets your armor to a certain type.
   permissions:
   - rcmds.setarmor
-  - rcmds.others.setarmor
   - rcmds.exempt.setarmor
-  - rcmds.setarmor.diamond
-  - rcmds.setarmor.iron
-  - rcmds.setarmor.chain
+  - rcmds.others.setarmor
   - rcmds.setarmor.*
-  - rcmds.setarmor.leather
+  - rcmds.setarmor.chain
+  - rcmds.setarmor.diamond
   - rcmds.setarmor.gold
+  - rcmds.setarmor.iron
+  - rcmds.setarmor.leather
   - rcmds.setarmor.none
   supports:
     name-completion: false

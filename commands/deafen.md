@@ -8,8 +8,8 @@ command:
   description: Toggles whether a player can see messages.
   permissions:
   - rcmds.deafen
-  - rcmds.others.deafen
   - rcmds.exempt.deafen
+  - rcmds.others.deafen
   supports:
     name-completion: false
     time-format: false

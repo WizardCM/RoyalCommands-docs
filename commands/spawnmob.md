@@ -8,8 +8,8 @@ command:
   description: Spawns mobs where the player is looking.
   permissions:
   - rcmds.spawnmob
-  - rcmds.spawnmob.*
   - rcmds.exempt.limit.spawnmob
+  - rcmds.spawnmob.*
   supports:
     name-completion: false
     time-format: false

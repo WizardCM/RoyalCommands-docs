@@ -6,8 +6,8 @@ command:
   description: Apply custom potion effects on players.
   permissions:
   - rcmds.effect
-  - rcmds.others.effect
   - rcmds.exempt.effect
+  - rcmds.others.effect
   supports:
     name-completion: false
     time-format: false

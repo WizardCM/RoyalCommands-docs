@@ -7,8 +7,8 @@ command:
   description: Teleports the player home.
   permissions:
   - rcmds.home
-  - rcmds.others.home
   - rcmds.exempt.home
+  - rcmds.others.home
   supports:
     name-completion: false
     time-format: false

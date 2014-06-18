@@ -7,8 +7,8 @@ command:
   permissions:
   - rcmds.enchant
   - rcmds.enchant.*
-  - rcmds.enchant.levels
   - rcmds.enchant.illegal
+  - rcmds.enchant.levels
   supports:
     name-completion: false
     time-format: false

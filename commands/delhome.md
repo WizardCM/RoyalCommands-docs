@@ -11,8 +11,8 @@ command:
   description: Deletes a home.
   permissions:
   - rcmds.delhome
-  - rcmds.others.delhome
   - rcmds.exempt.delhome
+  - rcmds.others.delhome
   supports:
     home-format: true
     name-completion: false

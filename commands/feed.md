@@ -6,8 +6,8 @@ command:
   description: Feeds a player or the player himself.
   permissions:
   - rcmds.feed
-  - rcmds.others.feed
   - rcmds.exempt.feed
+  - rcmds.others.feed
   supports:
     name-completion: false
     time-format: false

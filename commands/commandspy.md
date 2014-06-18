@@ -7,8 +7,8 @@ command:
   description: Allows the player to spy on commands used.
   permissions:
   - rcmds.commandspy
-  - rcmds.others.commandspy
   - rcmds.exempt.commandspy
+  - rcmds.others.commandspy
   supports:
     name-completion: true
   usage: /commandspy (player)

@@ -77,6 +77,7 @@ def generate_files():
         if "configuration" not in fm_command: fm_command["configuration"] = []
         if "permissions" not in fm_command or len(fm_command["permissions"]) < 1: fm_command["permissions"] = get_permissions_for_command(command)
         else: fm_command["permissions"] += list(set(get_permissions_for_command(command)) - set(fm_command["permissions"]))
+        fm_command["permissions"] = fm_command["permissions"][0:1] + sorted(fm_command["permissions"][1:])
         supports = fm_command["supports"] if "supports" in fm_command else {}
         fm_command["supports"] = supports
         front_matter["command"] = fm_command
